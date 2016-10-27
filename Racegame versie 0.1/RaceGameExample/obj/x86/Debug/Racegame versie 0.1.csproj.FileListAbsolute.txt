@@ -8,3 +8,5 @@ C:\Users\renda\Desktop\Git\DaBigRacegame\Racegame versie 0.1\RaceGameExample\obj
 C:\Users\renda\Desktop\Git\DaBigRacegame\Racegame versie 0.1\RaceGameExample\obj\x86\Debug\RaceGameExample.pdb
 C:\Users\Sven Mark\Documents\Git\DaBigRacegame\Racegame versie 0.1\RaceGameExample\obj\x86\Debug\RaceGameExample.exe
 C:\Users\Sven Mark\Documents\Git\DaBigRacegame\Racegame versie 0.1\RaceGameExample\obj\x86\Debug\RaceGameExample.pdb
+C:\Users\kevin\Desktop\Troepjes\School\C# Racegame\Git\DaBigRacegame\Racegame versie 0.1\RaceGameExample\obj\x86\Debug\RaceGameExample.exe
+C:\Users\kevin\Desktop\Troepjes\School\C# Racegame\Git\DaBigRacegame\Racegame versie 0.1\RaceGameExample\obj\x86\Debug\RaceGameExample.pdb
