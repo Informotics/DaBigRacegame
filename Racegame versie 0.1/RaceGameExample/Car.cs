@@ -132,8 +132,8 @@ namespace RaceGameExample {
         public void calculateNewPosition()
         {
             changeSpeed();
-            position.X += (int)Math.Round(speed * Math.Cos(rotation)); //pure magic here!
-            position.Y += (int)Math.Round(speed * Math.Sin(rotation)); //more magic here!
+            position.X += (int)Math.Round(speed * Math.Cos(rotation)); //pure magic here
+            position.Y += (int)Math.Round(speed * Math.Sin(rotation)); //more magic here
         }
     }
 }
