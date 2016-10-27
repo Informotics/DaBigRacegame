@@ -37,7 +37,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::RaceGameExample.Properties.Resources.Racebaan;
+            this.BackgroundImage = global::RaceGameExample.Properties.Resources.Racebaan1;
             this.ClientSize = new System.Drawing.Size(1006, 721);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "formRaceGame";
