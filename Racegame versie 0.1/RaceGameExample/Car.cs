@@ -26,7 +26,7 @@ namespace RaceGameExample {
         /// <param name="throttleKey">the key to throttle</param>
         /// <param name="brakeKey">the key to brake/reverse</param>
         /// <param name="image">the image used to draw the car</param>
-        public Car(int postionx, int positiony, float rotation, double speed, Keys leftKey, Keys rightKey, Keys throttleKey, Keys brakeKey, Image image)
+        public Car(int postionx, int positiony, float rotation, double speed, Keys leftKey, Keys rightKey, Keys throttleKey, Keys  brakeKey, Image image)
         {
             position.X = postionx;
             position.Y = positiony;
@@ -102,7 +102,7 @@ namespace RaceGameExample {
         private void rotateRight()
         {
             if (speed != 0)
-                this.rotation += .07f;
+                this.rotation += 0.7f;
         }
 
         private void rotateLeft()

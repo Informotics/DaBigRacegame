@@ -37,7 +37,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::RaceGameExample.Properties.Resources.Racebaan1;
+            this.BackgroundImage = global::RaceGameExample.Properties.Resources.Racebaan;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.DoubleBuffered = true;
@@ -45,7 +45,7 @@
             this.MinimumSize = new System.Drawing.Size(1024, 768);
             this.Name = "formRaceGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RaceGameExample";
+            this.Text = "Race game";
             this.ResumeLayout(false);
 
         }
