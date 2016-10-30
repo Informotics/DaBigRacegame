@@ -63,6 +63,46 @@ namespace RaceGameExample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BMW_M6_GT3 {
+            get {
+                object obj = ResourceManager.GetObject("BMW M6 GT3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ferari_458_Italia {
+            get {
+                object obj = ResourceManager.GetObject("Ferari 458 Italia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mercedes_AMG_GTR {
+            get {
+                object obj = ResourceManager.GetObject("Mercedes AMG GTR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Porsche_911_GTR_RS {
+            get {
+                object obj = ResourceManager.GetObject("Porsche 911 GTR RS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Racebaan {
             get {
                 object obj = ResourceManager.GetObject("Racebaan", resourceCulture);

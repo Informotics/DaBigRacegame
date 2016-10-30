@@ -11,17 +11,18 @@ namespace RaceGameExample
 {
     public partial class Splash_Screen : Form
     {
+
         public Splash_Screen()
         {
             InitializeComponent();
         }
 
+        //Start knop
         private void button1_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            var myForm = new formRaceGame();
+            var myForm = new PickerP1();
             myForm.Show();
-
         }
     }
 }
