@@ -12,7 +12,7 @@ namespace RaceGameExample {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formRaceGame());
+            Application.Run(new Splash_Screen());
         }
     }
 }
