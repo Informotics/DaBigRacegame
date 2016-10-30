@@ -109,15 +109,10 @@
     <None Include="Resources\Racebaan.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BMW-M6-GT3.png" />
-    <Content Include="Ferarri458Italia.png" />
-    <Content Include="MercedesAMG-GTR.png" />
-    <Content Include="Porsche911-GT3-RS.png" />
     <Content Include="Resources\BMW M6 GT3.png" />
     <Content Include="Resources\Ferari 458 Italia.png" />
     <Content Include="Resources\Mercedes AMG GTR.png" />
     <Content Include="Resources\Porsche 911 GTR RS.png" />
-    <Content Include="Resources\Racebaan1.png" />
     <Content Include="Resources\Splash.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
