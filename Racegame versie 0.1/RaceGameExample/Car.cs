@@ -68,6 +68,11 @@ namespace RaceGameExample {
             return position;
         }
 
+        public float getRotation()
+        {
+            return rotation;
+        }
+
         public Image getImage() 
         {
             return image;

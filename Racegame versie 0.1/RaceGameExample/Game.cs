@@ -170,7 +170,7 @@ namespace RaceGameExample {
         void Draw(Graphics g) {
             foreach (Car car in cars) {
                 g.TranslateTransform(car.getPosition().X, car.getPosition().Y);
-                g.RotateTransform(45);
+                g.RotateTransform(car.getRotation() * 10);
                 g.DrawImage(car.getImage(), 0, 0);
                 g.ResetTransform();
 
