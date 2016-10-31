@@ -24,6 +24,7 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formRaceGame));
             this.timerGameTicks = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
@@ -41,6 +42,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1024, 768);
             this.MinimumSize = new System.Drawing.Size(1024, 768);
             this.Name = "formRaceGame";
