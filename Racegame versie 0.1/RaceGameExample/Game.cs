@@ -53,22 +53,22 @@ namespace RaceGameExample {
             //Check welke auto player 2 koos en maak hem aan
             if (Carplayer1 == 1)
             {
-                Car car2 = new Car(270, 665, 0, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "BMW-M6-GT3.png")));
+                Car car2 = new Car(270, 665, 3.1f, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "BMW-M6-GT3.png")));
                 cars.Add(car2);
             }
             if (Carplayer1 == 2)
             {
-                Car car2 = new Car(270, 665, 0, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Ferarri458Italia.png")));
+                Car car2 = new Car(270, 665, 3.1f, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Ferarri458Italia.png")));
                 cars.Add(car2);
             }
             if (Carplayer1 == 3)
             {
-                Car car2 = new Car(270, 665, 0, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "MercedesAMG-GTR.png")));
+                Car car2 = new Car(270, 665, 3.1f, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "MercedesAMG-GTR.png")));
                 cars.Add(car2);
             }
             if (Carplayer1 == 4)
             {
-                Car car2 = new Car(270, 665, 0, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Porsche911-GTR-RS.png")));
+                Car car2 = new Car(270, 665, 3.1f, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Porsche911-GTR-RS.png")));
                 cars.Add(car2);
             }
 
