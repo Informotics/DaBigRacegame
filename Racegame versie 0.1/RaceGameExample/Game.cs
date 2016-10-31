@@ -174,7 +174,6 @@ namespace RaceGameExample {
                 g.RotateTransform(car.getRotation());
                 g.DrawImage(car.getImage(), car.getImage().Width / 2.0f, car.getImage().Height / 2.0f);
                 g.ResetTransform();
-
                 }
         }
 
