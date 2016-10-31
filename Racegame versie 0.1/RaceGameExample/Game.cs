@@ -169,36 +169,14 @@ namespace RaceGameExample {
 
 
         void Draw(Graphics g) {
-<<<<<<< HEAD
-            using (var buffer = Graphics.FromImage(Backbuffer)) {
-                buffer.Clear(Color.Black);
-                buffer.DrawImageUnscaled(this.BackgroundImage, new Point(0,0));
-                foreach (Car car in cars)
-                {
-                    g.TranslateTransform(car.getPosition().X, car.getPosition().Y);
-
-                    PointF rotatePoint = new PointF(car.getPosition().X - car.getImage().Width / 2, car.getPosition().Y + car.getImage().Height );
-                    Matrix myMatrix = new Matrix();
-                    myMatrix.RotateAt(car.getRotation(), rotatePoint, MatrixOrder.Append);
-                    buffer.Transform = myMatrix;
-
-=======
             foreach (Car car in cars) {
                 int angle = 0;
                 g.TranslateTransform(car.getPosition().X, car.getPosition().Y);
                 g.RotateTransform(angle);
                 g.DrawImage(car.getImage(), car.getImage().Width / 2.0f, car.getImage().Height / 2.0f);
                 g.ResetTransform();
->>>>>>> dank
-
-                    g.RotateTransform(car.getRotation());
-                    buffer.DrawImage(car.getImage(), rotatePoint);
-                    g.ResetTransform();
 
                 }
-            }
-                
-                
         }
 
         private void timerGameTicks_Tick(object sender, EventArgs e) {
