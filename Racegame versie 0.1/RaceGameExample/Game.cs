@@ -18,59 +18,114 @@ namespace RaceGameExample {
         //Maak de auto ints aan
         int Carplayer1;
         int Carplayer2;
+        int Map;
 
         public formRaceGame() {
             InitializeComponent();
-
             Carplayer1 = PickerP1.CarP1;
             Carplayer2 = PickerP2.CarP2;
+            Map = ChooseMap.Map;
+            
+            if (Map == 1)
+            {
+                this.BackgroundImage = Properties.Resources.Racebaan;
+                if (Carplayer2 == 1)
+                {
+                    Car car1 = new Car(270, 635, 3.1f, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "BMW-M6-GT3.png")));
+                    cars.Add(car1);
+                }
+                if (Carplayer2 == 2)
+                {
+                    Car car1 = new Car(270, 635, 3.1f, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Ferarri458Italia.png")));
+                    cars.Add(car1);
+                }
+                if (Carplayer2 == 3)
+                {
+                    Car car1 = new Car(270, 635, 3.1f, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "MercedesAMG-GTR.png")));
+                    cars.Add(car1);
+                }
+                if (Carplayer2 == 4)
+                {
+                    Car car1 = new Car(270, 635, 3.1f, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Porsche911-GTR-RS.png")));
+                    cars.Add(car1);
+                }
 
-            //Tijdelijk bewijs dat de autos zijn doorgegeven.
-            MessageBox.Show("Player 1 koos auto "+Carplayer1+ " en Player 2 koos auto "+Carplayer2);
+                //Check welke auto player 2 koos en maak hem aan
+                if (Carplayer1 == 1)
+                {
+                    Car car2 = new Car(270, 665, 3.1f, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "BMW-M6-GT3.png")));
+                    cars.Add(car2);
+                }
+                if (Carplayer1 == 2)
+                {
+                    Car car2 = new Car(270, 665, 3.1f, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Ferarri458Italia.png")));
+                    cars.Add(car2);
+                }
+                if (Carplayer1 == 3)
+                {
+                    Car car2 = new Car(270, 665, 3.1f, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "MercedesAMG-GTR.png")));
+                    cars.Add(car2);
+                }
+                if (Carplayer1 == 4)
+                {
+                    Car car2 = new Car(270, 665, 3.1f, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Porsche911-GTR-RS.png")));
+                    cars.Add(car2);
+                }
+            }
+
+            if (Map==2)
+            {
+                this.BackgroundImage = Properties.Resources.RacebaanSnow;
+                if (Carplayer2 == 1)
+                {
+                    Car car1 = new Car(155, 302, 3.1f, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "BMW-M6-GT3.png")));
+                    cars.Add(car1);
+                }
+                if (Carplayer2 == 2)
+                {
+                    Car car1 = new Car(155, 302, 3.1f, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Ferarri458Italia.png")));
+                    cars.Add(car1);
+                }
+                if (Carplayer2 == 3)
+                {
+                    Car car1 = new Car(155, 302, 3.1f, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "MercedesAMG-GTR.png")));
+                    cars.Add(car1);
+                }
+                if (Carplayer2 == 4)
+                {
+                    Car car1 = new Car(155, 302, 3.1f, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Porsche911-GTR-RS.png")));
+                    cars.Add(car1);
+                }
+
+                //Check welke auto player 2 koos en maak hem aan
+                if (Carplayer1 == 1)
+                {
+                    Car car2 = new Car(209, 302, 3.1f, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "BMW-M6-GT3.png")));
+                    cars.Add(car2);
+                }
+                if (Carplayer1 == 2)
+                {
+                    Car car2 = new Car(209, 302, 3.1f, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Ferarri458Italia.png")));
+                    cars.Add(car2);
+                }
+                if (Carplayer1 == 3)
+                {
+                    Car car2 = new Car(209, 302, 3.1f, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "MercedesAMG-GTR.png")));
+                    cars.Add(car2);
+                }
+                if (Carplayer1 == 4)
+                {
+                    Car car2 = new Car(209, 302, 3.1f, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Porsche911-GTR-RS.png")));
+                    cars.Add(car2);
+                }
+            }
+            if (Map == 3)
+            {
+                MessageBox.Show("Deze map is nog niet beschikbaar");
+            }
 
             //Check welke auto player 1 koos en maak hem aan
-            if (Carplayer2 == 1)
-            {
-                Car car1 = new Car(270, 635, 3.1f, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "BMW-M6-GT3.png")));
-                cars.Add(car1);
-            }
-            if (Carplayer2 == 2)
-            {
-                Car car1 = new Car(270, 635, 3.1f, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Ferarri458Italia.png")));
-                cars.Add(car1);
-            }
-            if (Carplayer2 == 3)
-            {
-                Car car1 = new Car(270, 635, 3.1f, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "MercedesAMG-GTR.png")));
-                cars.Add(car1);
-            }
-            if (Carplayer2 == 4)
-            {
-                Car car1 = new Car(270, 635, 3.1f, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Porsche911-GTR-RS.png")));
-                cars.Add(car1);
-            }
-
-            //Check welke auto player 2 koos en maak hem aan
-            if (Carplayer1 == 1)
-            {
-                Car car2 = new Car(270, 665, 3.1f, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "BMW-M6-GT3.png")));
-                cars.Add(car2);
-            }
-            if (Carplayer1 == 2)
-            {
-                Car car2 = new Car(270, 665, 3.1f, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Ferarri458Italia.png")));
-                cars.Add(car2);
-            }
-            if (Carplayer1 == 3)
-            {
-                Car car2 = new Car(270, 665, 3.1f, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "MercedesAMG-GTR.png")));
-                cars.Add(car2);
-            }
-            if (Carplayer1 == 4)
-            {
-                Car car2 = new Car(270, 665, 3.1f, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Porsche911-GTR-RS.png")));
-                cars.Add(car2);
-            }
+            
 
             this.SetStyle(
             ControlStyles.UserPaint |
