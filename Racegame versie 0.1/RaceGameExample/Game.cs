@@ -166,8 +166,6 @@ namespace RaceGameExample {
             Backbuffer = new Bitmap(ClientSize.Width, ClientSize.Height);
         }
 
-
-
         void Draw(Graphics g) {
             foreach (Car car in cars) {
                 g.TranslateTransform(car.getPosition().X, car.getPosition().Y);
