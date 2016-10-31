@@ -102,7 +102,7 @@ namespace RaceGameExample {
         private void rotateRight()
         {
             if (speed != 0)
-                this.rotation += 0.7f;
+                this.rotation += .07f;
         }
 
         private void rotateLeft()
