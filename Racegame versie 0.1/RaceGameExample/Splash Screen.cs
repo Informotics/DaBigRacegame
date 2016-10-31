@@ -21,7 +21,7 @@ namespace RaceGameExample
         private void button1_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            var myForm = new PickerP1();
+            var myForm = new ChooseMap();
             myForm.Show();
         }
     }

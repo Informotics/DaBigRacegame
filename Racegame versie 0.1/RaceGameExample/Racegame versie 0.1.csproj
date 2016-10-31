@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Car.cs" />
+    <Compile Include="ChooseMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseMap.Designer.cs">
+      <DependentUpon>ChooseMap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Game.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     <Compile Include="Splash Screen.Designer.cs">
       <DependentUpon>Splash Screen.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChooseMap.resx">
+      <DependentUpon>ChooseMap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Game.resx">
       <DependentUpon>Game.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +122,7 @@
     <Content Include="Resources\Ferari 458 Italia.png" />
     <Content Include="Resources\Mercedes AMG GTR.png" />
     <Content Include="Resources\Porsche 911 GTR RS.png" />
+    <Content Include="Resources\RacebaanSnow.png" />
     <Content Include="Resources\Splash.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
