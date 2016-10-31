@@ -53,6 +53,7 @@
     <Compile Include="ChooseMap.Designer.cs">
       <DependentUpon>ChooseMap.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sounds.cs" />
     <Compile Include="Game.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +120,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\BMW M6 GT3.png" />
+    <None Include="Resources\Click1.WAV" />
     <Content Include="Resources\Ferari 458 Italia.png" />
     <Content Include="Resources\Mercedes AMG GTR.png" />
     <Content Include="Resources\Porsche 911 GTR RS.png" />
