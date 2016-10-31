@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
 using System.IO;
 
 
@@ -168,13 +169,26 @@ namespace RaceGameExample {
 
 
         void Draw(Graphics g) {
-            foreach (Car car in cars) {
-                g.TranslateTransform(car.getPosition().X, car.getPosition().Y);
-                g.RotateTransform(car.getRotation() * 10);
-                g.DrawImage(car.getImage(), 0, 0);
-                g.ResetTransform();
+            using (var buffer = Graphics.FromImage(Backbuffer)) {
+                buffer.Clear(Color.Black);
+                buffer.DrawImageUnscaled(this.BackgroundImage, new Point(0,0));
+                foreach (Car car in cars)
+                {
+                    g.TranslateTransform(car.getPosition().X, car.getPosition().Y);
 
+                    PointF rotatePoint = new PointF(car.getPosition().X - car.getImage().Width / 2, car.getPosition().Y + car.getImage().Height );
+                    Matrix myMatrix = new Matrix();
+                    myMatrix.RotateAt(car.getRotation(), rotatePoint, MatrixOrder.Append);
+                    buffer.Transform = myMatrix;
+
+
+                    g.RotateTransform(car.getRotation());
+                    buffer.DrawImage(car.getImage(), rotatePoint);
+                    g.ResetTransform();
+
+                }
             }
+                
                 
         }
 

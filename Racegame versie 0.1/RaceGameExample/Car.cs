@@ -14,6 +14,8 @@ namespace RaceGameExample {
         private Keys leftKey, rightKey, throttleKey, brakeKey;
         private Image image;
 
+        const float rotateAmount = 0.7f;
+
         /// <summary>
         /// Constructor of the car class
         /// </summary>
@@ -107,13 +109,13 @@ namespace RaceGameExample {
         private void rotateRight()
         {
             if (speed != 0)
-                this.rotation += .07f;
+                this.rotation += rotateAmount;
         }
 
         private void rotateLeft()
         {
             if (speed != 0)
-                this.rotation -= .07f;
+                this.rotation -= rotateAmount;
         }
 
         private void changeSpeed()
