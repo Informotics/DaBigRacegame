@@ -102,13 +102,13 @@ namespace RaceGameExample {
         private void rotateRight()
         {
             if (speed != 0)
-                this.rotation += .07f;
+                this.rotation += .7f;
         }
 
         private void rotateLeft()
         {
             if (speed != 0)
-                this.rotation -= .07f;
+                this.rotation -= .7f;
         }
 
         private void changeSpeed()
@@ -132,8 +132,8 @@ namespace RaceGameExample {
         public void calculateNewPosition()
         {
             changeSpeed();
-            position.X += (int)Math.Round(speed * Math.Cos(rotation)); //pure magic here!
-            position.Y += (int)Math.Round(speed * Math.Sin(rotation)); //more magic here
+            position.X += (int)Math.Round(speed * Math.Cos((rotation/180) * Math.PI)); //pure magic here!
+            position.Y += (int)Math.Round(speed * Math.Sin((rotation/180) * Math.PI)); //more magic here
         }
     }
 }
