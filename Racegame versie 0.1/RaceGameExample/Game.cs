@@ -168,8 +168,14 @@ namespace RaceGameExample {
 
 
         void Draw(Graphics g) {
-            foreach (Car car in cars)
-                g.DrawImage(car.getImage(), car.getPosition());
+            foreach (Car car in cars) {
+                g.TranslateTransform(car.getPosition().X, car.getPosition().Y);
+                g.RotateTransform(45);
+                g.DrawImage(car.getImage(), 0, 0);
+                g.ResetTransform();
+
+            }
+                
         }
 
         private void timerGameTicks_Tick(object sender, EventArgs e) {
