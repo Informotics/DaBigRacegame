@@ -19,6 +19,7 @@ namespace RaceGameExample
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Sounds.Klik.Play();
             Map = 1;
             this.Visible = false;
             var myForm = new PickerP1();
@@ -26,6 +27,7 @@ namespace RaceGameExample
         }
         private void button2_Click(object sender, EventArgs e)
         {
+            Sounds.Klik.Play();
             Map = 2;
             this.Visible = false;
             var myForm = new PickerP1();
@@ -33,6 +35,7 @@ namespace RaceGameExample
         }
         private void button3_Click(object sender, EventArgs e)
         {
+            Sounds.Klik.Play();
             Map = 1;
             this.Visible = false;
             var myForm = new PickerP1();
