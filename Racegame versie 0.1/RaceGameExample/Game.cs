@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Media;
+using RaceGameExample.Properties;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -192,6 +194,7 @@ namespace RaceGameExample {
                 car.calculateNewPosition();
 
             Invalidate();
+
         }
     }
 }
