@@ -20,6 +20,7 @@ namespace RaceGameExample {
         int Carplayer1;
         int Carplayer2;
         int Map;
+        int times = 0;
 
         public formRaceGame() {
             InitializeComponent();
@@ -170,7 +171,8 @@ namespace RaceGameExample {
             foreach (Car car in cars) {
                 g.TranslateTransform(car.getPosition().X, car.getPosition().Y);
                 g.RotateTransform(car.getRotation());
-                g.DrawImage(car.getImage(), car.getImage().Width / 10.0f, car.getImage().Height / 10.0f);
+                //middelpunt auto veranderen?
+                g.DrawImage(car.getImage(), car.getImage().Width / 2.0f, car.getImage().Height / 2.0f);
                 g.ResetTransform();
                 }
         }
