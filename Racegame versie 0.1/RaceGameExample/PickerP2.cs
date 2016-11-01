@@ -16,7 +16,7 @@ namespace RaceGameExample
             InitializeComponent();
         }
 
-        //Creer auto INT
+        //Creer auto INT .
         public static int CarP2;
 
 
