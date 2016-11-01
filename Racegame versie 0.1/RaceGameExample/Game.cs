@@ -11,7 +11,8 @@ using System.IO;
 
 
 namespace RaceGameExample {
-    public partial class formRaceGame : Form {
+    public partial class formRaceGame : Form
+    {
 
         Bitmap Backbuffer;
 
@@ -21,12 +22,13 @@ namespace RaceGameExample {
         int Carplayer2;
         int Map;
 
-        public formRaceGame() {
+        public formRaceGame()
+        {
             InitializeComponent();
             Carplayer1 = PickerP1.CarP1;
             Carplayer2 = PickerP2.CarP2;
             Map = ChooseMap.Map;
-            
+
             if (Map == 1)
             {
                 this.BackgroundImage = Properties.Resources.Racebaan;
@@ -74,7 +76,7 @@ namespace RaceGameExample {
                 }
             }
 
-            if (Map==2)
+            if (Map == 2)
             {
                 this.BackgroundImage = Properties.Resources.RacebaanSnow;
                 if (Carplayer2 == 1)
@@ -126,7 +128,7 @@ namespace RaceGameExample {
             }
 
             //Check welke auto player 1 koos en maak hem aan
-            
+
 
             this.SetStyle(
             ControlStyles.UserPaint |
@@ -141,50 +143,53 @@ namespace RaceGameExample {
             this.KeyUp += new KeyEventHandler(Form1_KeyUp);
         }
 
-        void Form1_KeyUp(object sender, KeyEventArgs e) {
+        void Form1_KeyUp(object sender, KeyEventArgs e)
+        {
             foreach (Car car in cars)
                 car.handleKeyUpEvent(e);
         }
 
-        void Form1_KeyDown(object sender, KeyEventArgs e) {
+        void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
             foreach (Car car in cars)
                 car.handleKeyDownEvent(e);
         }
 
-        void Form1_Paint(object sender, PaintEventArgs e) {
-            if (Backbuffer != null) {
+        void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            if (Backbuffer != null)
+            {
                 e.Graphics.DrawImageUnscaled(Backbuffer, Point.Empty);
             }
 
             Draw(e.Graphics);
         }
 
-        void Form1_CreateBackBuffer(object sender, EventArgs e) {
+        void Form1_CreateBackBuffer(object sender, EventArgs e)
+        {
             if (Backbuffer != null)
                 Backbuffer.Dispose();
 
             Backbuffer = new Bitmap(ClientSize.Width, ClientSize.Height);
         }
 
-        void Draw(Graphics g) {
-            foreach (Car car in cars) {
+        void Draw(Graphics g)
+        {
+            foreach (Car car in cars)
+            {
                 g.TranslateTransform(car.getPosition().X, car.getPosition().Y);
                 g.RotateTransform(car.getRotation());
                 g.DrawImage(car.getImage(), car.getImage().Width / 10.0f, car.getImage().Height / 10.0f);
                 g.ResetTransform();
-                }
+            }
         }
 
-        private void timerGameTicks_Tick(object sender, EventArgs e) {
+        private void timerGameTicks_Tick(object sender, EventArgs e)
+        {
             foreach (Car car in cars)
                 car.calculateNewPosition();
 
             Invalidate();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
