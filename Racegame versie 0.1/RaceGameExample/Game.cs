@@ -169,12 +169,15 @@ namespace RaceGameExample {
 
         void Draw(Graphics g) {
             foreach (Car car in cars) {
-                g.TranslateTransform(car.getPosition().X, car.getPosition().Y);
+                //next lvl magic
+                float moveX = car.getImage().Width / 2f + car.getPosition().X;
+                float moveY = car.getImage().Height / 2f + car.getPosition().Y;
+                g.TranslateTransform(moveX, moveY);
                 g.RotateTransform(car.getRotation());
-                //middelpunt auto veranderen?
-                g.DrawImage(car.getImage(), car.getImage().Width / 2.0f, car.getImage().Height / 2.0f);
+                g.TranslateTransform(-moveX, -moveY);
+                g.DrawImage(car.getImage(), car.getPosition().X, car.getPosition().Y);
                 g.ResetTransform();
-                }
+            }
         }
 
         private void timerGameTicks_Tick(object sender, EventArgs e) {
