@@ -13,6 +13,8 @@ namespace RaceGameExample {
         private bool leftPressed = false, rightPressed = false, throttlePressed = false, brakePressed = false;
         private Keys leftKey, rightKey, throttleKey, brakeKey;
         private Image image;
+        private float fuel = 90;
+        private int laps = 1;
 
         const float rotateAmount = 3.0f;
 
@@ -70,6 +72,21 @@ namespace RaceGameExample {
             return position;
         }
 
+        public float getFuel()
+        {
+            return fuel;
+        }
+
+        public double getSpeed ()
+        {
+            return speed;
+        }
+
+        public int getLap()
+        {
+            return laps;
+        }
+
         public float getRotation()
         {
             return rotation;
@@ -78,6 +95,25 @@ namespace RaceGameExample {
         public Image getImage() 
         {
             return image;
+        }
+
+        private void AmountFuel ()
+        {
+            if (speed != 0)
+            {
+                fuel -= 0.4f;
+            }
+
+            if (fuel <= 0)
+            {
+                fuel = 0;
+                if (speed >= .02)
+                    speed -= .05;
+                else if (speed <= -.02)
+                    speed += 0.05;
+                else
+                    speed = 0;
+            }
         }
 
         private void accelerate() 
