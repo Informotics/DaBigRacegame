@@ -222,6 +222,7 @@ namespace RaceGameExample {
             foreach (Car car in cars) {
                 //next lvl magic
                 car.checkpointCount();
+                car.AmountFuel();
                 //String drawCheck1 = "1: " + car.check1;
                 //DrawString(g, drawCheck1, 10, 10 * CarIndex);
                 //String drawCheck2 = "2: " + car.check2;
@@ -230,10 +231,12 @@ namespace RaceGameExample {
                 //DrawString(g, drawCheck3, 200, 10 * CarIndex);
                 String drawSpeed = "Speed: " + Math.Round(car.speed * 64);
                 DrawString(g, drawSpeed, 0, 10 * CarIndex);
-                String drawFinish = "Finish: " + car.finish;
-                DrawString(g, drawFinish, 300, 10 * CarIndex);
-                String drawLaps= "Lap: " + car.laps;
-                DrawString(g, drawLaps, 500, 10 * CarIndex);
+                //String drawFinish = "Finish: " + car.finish;
+                //DrawString(g, drawFinish, 300, 10 * CarIndex);
+                String drawLaps= "Lap: " + car.laps + "/3";
+                DrawString(g, drawLaps, 100, 10 * CarIndex);
+                String drawFuel = "Fuel: " + Math.Round(car.fuel);
+                DrawString(g, drawFuel, 200, 10 * CarIndex);
 
                 float moveX = car.getImage().Width / 2f + car.getPosition().X;
                 float moveY = car.getImage().Height / 2f + car.getPosition().Y;
