@@ -40,16 +40,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::RaceGameExample.Properties.Resources.Racebaan;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1024, 768);
+            this.ClientSize = new System.Drawing.Size(1008, 729);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.ForestGreen;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1024, 768);
             this.MinimumSize = new System.Drawing.Size(1024, 768);
             this.Name = "formRaceGame";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Race game";
+            this.Text = "Classic Kart";
             this.ResumeLayout(false);
 
         }
