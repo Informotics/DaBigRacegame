@@ -228,7 +228,8 @@ namespace RaceGameExample {
                 //DrawString(g, drawCheck2, 100, 10 * CarIndex);
                 //String drawCheck3 = "3: " + car.check3;
                 //DrawString(g, drawCheck3, 200, 10 * CarIndex);
-                String drawSpeed = "Speed: " + car.speed
+                String drawSpeed = "Speed: " + Math.Round(car.speed * 64);
+                DrawString(g, drawSpeed, 0, 10 * CarIndex);
                 String drawFinish = "Finish: " + car.finish;
                 DrawString(g, drawFinish, 300, 10 * CarIndex);
                 String drawLaps= "Lap: " + car.laps;
