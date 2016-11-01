@@ -36,7 +36,7 @@
             // 
             // button3
             // 
-            this.button3.BackgroundImage = global::RaceGameExample.Properties.Resources.Racebaan;
+            this.button3.BackgroundImage = global::RaceGameExample.Properties.Resources.RacebaanDesert;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Location = new System.Drawing.Point(689, 327);

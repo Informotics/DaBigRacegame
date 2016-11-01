@@ -121,80 +121,8 @@
   <data name="Ferari 458 Italia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ferari 458 Italia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RacebaanSnow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RacebaanSnow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Porsche 911 GTR RS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Porsche 911 GTR RS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Racebaan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Racebaan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BMW M6 GT3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BMW M6 GT3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Click1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Click1.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Player1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Player1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Mercedes AMG GTR" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mercedes AMG GTR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Player2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Player2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Splash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RacebaanSnow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RacebaanSnow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BANG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BANG.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="BOOM" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BOOM.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Car1Speed1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Car1Speed1.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Car1Speed2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Car1Speed2.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Car1Speed3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Car1Speed3.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Car2Speed1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Car2Speed1.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Car2Speed2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Car2Speed2.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Car2Speed3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Car2Speed3.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Click1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Click1.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="Countdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Countdown.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Finallap" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Finallap.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Finish" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Finish.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="KAPOW" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KAPOW.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="KLETS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KLETS.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Offroad" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Offroad.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="PATS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PATS.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -202,7 +130,76 @@
   <data name="Refill" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Refill.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Finallap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Finallap.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RacebaanSnow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RacebaanSnow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Car2Speed1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Car2Speed1.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Player2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Player2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Click1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Click1.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Victory" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Victory.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Finish" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Finish.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Car1Speed3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Car1Speed3.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BOOM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BOOM.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Car1Speed1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Car1Speed1.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BMW M6 GT3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BMW M6 GT3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KAPOW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KAPOW.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Car2Speed2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Car2Speed2.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="KLETS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KLETS.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Car2Speed3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Car2Speed3.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Player1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Player1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Porsche 911 GTR RS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Porsche 911 GTR RS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Car1Speed2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Car1Speed2.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Splash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Offroad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Offroad.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Mercedes AMG GTR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mercedes AMG GTR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Racebaan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Racebaan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BANG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BANG.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RacebaanDesert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RacebaanDesert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

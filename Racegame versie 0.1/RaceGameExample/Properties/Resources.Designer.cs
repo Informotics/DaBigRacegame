@@ -163,16 +163,6 @@ namespace RaceGameExample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Close {
-            get {
-                object obj = ResourceManager.GetObject("Close", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Ferari_458_Italia {
             get {
                 object obj = ResourceManager.GetObject("Ferari 458 Italia", resourceCulture);
@@ -280,6 +270,16 @@ namespace RaceGameExample.Properties {
         internal static System.Drawing.Bitmap Racebaan {
             get {
                 object obj = ResourceManager.GetObject("Racebaan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RacebaanDesert {
+            get {
+                object obj = ResourceManager.GetObject("RacebaanDesert", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
