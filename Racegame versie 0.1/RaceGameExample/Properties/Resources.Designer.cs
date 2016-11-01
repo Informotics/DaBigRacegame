@@ -209,6 +209,16 @@ namespace RaceGameExample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap maps {
+            get {
+                object obj = ResourceManager.GetObject("maps", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Mercedes_AMG_GTR {
             get {
                 object obj = ResourceManager.GetObject("Mercedes AMG GTR", resourceCulture);
