@@ -41,5 +41,10 @@ namespace RaceGameExample
             var myForm = new PickerP1();
             myForm.Show();
         }
+
+        private void ChooseMap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

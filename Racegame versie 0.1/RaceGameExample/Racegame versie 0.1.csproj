@@ -131,6 +131,7 @@
     <None Include="Resources\Close.png" />
     <Content Include="Resources\KAPOW.WAV" />
     <Content Include="Resources\KLETS.WAV" />
+    <None Include="Resources\maps.png" />
     <Content Include="Resources\Offroad.WAV" />
     <Content Include="Resources\PATS.WAV" />
     <None Include="Resources\Player1.png" />
