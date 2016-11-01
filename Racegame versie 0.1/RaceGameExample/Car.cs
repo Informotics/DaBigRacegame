@@ -152,7 +152,9 @@ namespace RaceGameExample {
                         laps++;
                         if (laps == 4 && pitCount > 0)
                         {
-                            MessageBox.Show("you win");
+                        Sounds.Finish.PlaySync();
+                        Sounds.Victory.Play();
+                            MessageBox.Show("You win!");
                         }
                     }
             }
