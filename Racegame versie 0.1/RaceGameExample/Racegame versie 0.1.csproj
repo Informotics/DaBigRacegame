@@ -119,29 +119,29 @@
     <None Include="Resources\Racebaan.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\BANG.WAV" />
+    <EmbeddedResource Include="Resources\BANG.WAV" />
     <Content Include="Resources\BMW M6 GT3.png" />
-    <Content Include="Resources\BOOM.WAV" />
-    <Content Include="Resources\Car1Speed1.1.WAV" />
-    <Content Include="Resources\Car1Speed2.WAV" />
-    <Content Include="Resources\Car1Speed3.WAV" />
-    <Content Include="Resources\Car2Speed1.WAV" />
-    <Content Include="Resources\Car2Speed2.WAV" />
-    <Content Include="Resources\Car2Speed3.WAV" />
-    <Content Include="Resources\KAPOW.WAV" />
-    <Content Include="Resources\KLETS.WAV" />
-    <Content Include="Resources\Offroad.WAV" />
-    <Content Include="Resources\PATS.WAV" />
-    <Content Include="Resources\Refill.WAV" />
-    <Content Include="Resources\Victory.wav" />
-    <None Include="Resources\Click1.WAV" />
-    <Content Include="Resources\Countdown.WAV" />
+    <EmbeddedResource Include="Resources\Victory.wav" />
+    <EmbeddedResource Include="Resources\Countdown.WAV" />
+    <EmbeddedResource Include="Resources\Car1Speed1.WAV" />
+    <EmbeddedResource Include="Resources\Car1Speed2.WAV" />
+    <EmbeddedResource Include="Resources\Car1Speed3.WAV" />
+    <EmbeddedResource Include="Resources\Car2Speed1.WAV" />
+    <EmbeddedResource Include="Resources\Car2Speed2.WAV" />
+    <EmbeddedResource Include="Resources\Car2Speed3.WAV" />
+    <EmbeddedResource Include="Resources\Click1.WAV" />
+    <EmbeddedResource Include="Resources\BOOM.WAV" />
     <Content Include="Resources\Ferari 458 Italia.png" />
-    <Content Include="Resources\Finallap.WAV" />
-    <Content Include="Resources\Finish.WAV" />
+    <EmbeddedResource Include="Resources\Finallap.WAV" />
+    <EmbeddedResource Include="Resources\Finish.WAV" />
+    <EmbeddedResource Include="Resources\KAPOW.WAV" />
+    <EmbeddedResource Include="Resources\KLETS.WAV" />
     <Content Include="Resources\Mercedes AMG GTR.png" />
+    <EmbeddedResource Include="Resources\Offroad.WAV" />
+    <EmbeddedResource Include="Resources\PATS.WAV" />
     <Content Include="Resources\Porsche 911 GTR RS.png" />
     <Content Include="Resources\RacebaanSnow.png" />
+    <EmbeddedResource Include="Resources\Refill.WAV" />
     <Content Include="Resources\Splash.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

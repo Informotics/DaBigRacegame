@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Media;
+using RaceGameExample.Properties;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,6 +13,7 @@ using System.IO;
 
 
 namespace RaceGameExample {
+
     public partial class formRaceGame : Form {
 
         Bitmap Backbuffer;
@@ -180,6 +183,7 @@ namespace RaceGameExample {
                 car.calculateNewPosition();
 
             Invalidate();
+
         }
     }
 }
