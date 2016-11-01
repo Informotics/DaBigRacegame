@@ -222,12 +222,12 @@ namespace RaceGameExample {
             foreach (Car car in cars) {
                 //next lvl magic
                 car.checkpointCount();
-                String drawCheck1 = "1: " + car.check1;
-                DrawString(g, drawCheck1, 10, 10 * CarIndex);
-                String drawCheck2 = "2: " + car.check2;
-                DrawString(g, drawCheck2, 100, 10 * CarIndex);
-                String drawCheck3 = "3: " + car.check3;
-                DrawString(g, drawCheck3, 200, 10 * CarIndex);
+                //String drawCheck1 = "1: " + car.check1;
+                //DrawString(g, drawCheck1, 10, 10 * CarIndex);
+                //String drawCheck2 = "2: " + car.check2;
+                //DrawString(g, drawCheck2, 100, 10 * CarIndex);
+                //String drawCheck3 = "3: " + car.check3;
+                //DrawString(g, drawCheck3, 200, 10 * CarIndex);
                 String drawFinish = "Finish: " + car.finish;
                 DrawString(g, drawFinish, 300, 10 * CarIndex);
                 String drawLaps= "Lap: " + car.laps;
@@ -251,7 +251,7 @@ namespace RaceGameExample {
         //DONT TOUCH
         void DrawString(Graphics g, string str, int x, int y)
         {
-            Font drawFont = new Font("Arial", 16);
+            Font drawFont = new Font("Century Gothic Bold Italic", 16);
             SolidBrush drawBrush = new SolidBrush(Color.Red);
 
             // Draw string to screen
