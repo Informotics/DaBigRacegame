@@ -121,6 +121,9 @@
   <data name="Ferari 458 Italia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ferari 458 Italia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="RacebaanSnow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RacebaanSnow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Porsche 911 GTR RS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Porsche 911 GTR RS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -130,16 +133,22 @@
   <data name="BMW M6 GT3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BMW M6 GT3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Click1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Click1.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Player1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Player1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Mercedes AMG GTR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mercedes AMG GTR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Player2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Player2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Splash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RacebaanSnow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RacebaanSnow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Click1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Click1.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
