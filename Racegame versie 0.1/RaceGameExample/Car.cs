@@ -9,7 +9,7 @@ namespace RaceGameExample {
     class Car {
         private Point position;
         private float rotation;
-        private double speed;
+        public double speed;
         private bool leftPressed = false, rightPressed = false, throttlePressed = false, brakePressed = false;
         private Keys leftKey, rightKey, throttleKey, brakeKey;
         private Image image;
@@ -75,11 +75,6 @@ namespace RaceGameExample {
         public Point getPosition() 
         {
             return position;
-        }
-
-        public double getSpeed ()
-        {
-            return speed;
         }
 
         public float getRotation()
