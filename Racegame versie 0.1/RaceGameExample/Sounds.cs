@@ -44,6 +44,7 @@ namespace RaceGameExample
             Offroad.Load();
             Refill.Load();
             Klik.Load();
+            Countdown.Load();
         }
     }
 }
