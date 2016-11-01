@@ -14,9 +14,14 @@ namespace RaceGameExample {
         private Keys leftKey, rightKey, throttleKey, brakeKey;
         private Image image;
         private float fuel = 90;
-        private int laps = 1;
-
+        public int laps = 1;
+        private int checkpoints = 0;
+        private int Map;
         const float rotateAmount = 3.0f;
+        public bool check1 = false;
+        public bool check2 = false;
+        public bool check3 = false;
+        public bool finish = false;
 
         /// <summary>
         /// Constructor of the car class
@@ -72,19 +77,9 @@ namespace RaceGameExample {
             return position;
         }
 
-        public float getFuel()
-        {
-            return fuel;
-        }
-
         public double getSpeed ()
         {
             return speed;
-        }
-
-        public int getLap()
-        {
-            return laps;
         }
 
         public float getRotation()
@@ -114,6 +109,43 @@ namespace RaceGameExample {
                 else
                     speed = 0;
             }
+        }
+
+        public void checkpointCount ()
+        {
+            Map = ChooseMap.Map;
+            if (Map == 1)
+            {
+                if (getPosition().X > 250 && getPosition().X < 370 && getPosition().Y > 150 && getPosition().Y < 200)
+                {
+                    check1 = true;
+                }
+                if (getPosition().X > 900 && getPosition().X < 1010 && getPosition().Y > 560 && getPosition().Y < 620)
+                {
+                    check2 = true;
+                }
+                if (getPosition().Y > 310 && getPosition().Y < 430 && getPosition().X > 540 && getPosition().X < 580)
+                {
+                    check3 = true;
+                }
+                if (getPosition().Y > 540 && getPosition().Y < 745 && getPosition().X > 210 && getPosition().X < 260 && check2)
+                {
+                    finish = true;
+                }
+                if (check1 && check2 && check3 && finish)
+                {
+                    check1 = false;
+                    check2 = false;
+                    check3 = false;
+                    finish = false;
+                    laps++;
+                    if (laps == 4)
+                    {
+                        MessageBox.Show("you win");
+                    }
+                }
+            }
+
         }
 
         private void accelerate() 
