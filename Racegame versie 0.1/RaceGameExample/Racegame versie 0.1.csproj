@@ -119,9 +119,26 @@
     <None Include="Resources\Racebaan.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\BANG.WAV" />
     <Content Include="Resources\BMW M6 GT3.png" />
+    <Content Include="Resources\BOOM.WAV" />
+    <Content Include="Resources\Car1Speed1.1.WAV" />
+    <Content Include="Resources\Car1Speed2.WAV" />
+    <Content Include="Resources\Car1Speed3.WAV" />
+    <Content Include="Resources\Car2Speed1.WAV" />
+    <Content Include="Resources\Car2Speed2.WAV" />
+    <Content Include="Resources\Car2Speed3.WAV" />
+    <Content Include="Resources\KAPOW.WAV" />
+    <Content Include="Resources\KLETS.WAV" />
+    <Content Include="Resources\Offroad.WAV" />
+    <Content Include="Resources\PATS.WAV" />
+    <Content Include="Resources\Refill.WAV" />
+    <Content Include="Resources\Victory.wav" />
     <None Include="Resources\Click1.WAV" />
+    <Content Include="Resources\Countdown.WAV" />
     <Content Include="Resources\Ferari 458 Italia.png" />
+    <Content Include="Resources\Finallap.WAV" />
+    <Content Include="Resources\Finish.WAV" />
     <Content Include="Resources\Mercedes AMG GTR.png" />
     <Content Include="Resources\Porsche 911 GTR RS.png" />
     <Content Include="Resources\RacebaanSnow.png" />

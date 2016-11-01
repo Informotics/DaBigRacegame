@@ -28,6 +28,7 @@ namespace RaceGameExample
         //BMW
         private void button1_Click(object sender, EventArgs e)
         {
+            Sounds.Klik.Play();
             CarP1 = 1;
             this.Visible = false;
             var myForm = new PickerP2();
@@ -37,6 +38,7 @@ namespace RaceGameExample
         //Ferrari
         private void button3_Click(object sender, EventArgs e)
         {
+            Sounds.Klik.Play();
             CarP1 = 2;
             this.Visible = false;
             var myForm = new PickerP2();
@@ -46,6 +48,7 @@ namespace RaceGameExample
         //Mercedes
         private void button2_Click(object sender, EventArgs e)
         {
+            Sounds.Klik.Play();
             CarP1 = 3;
             this.Visible = false;
             var myForm = new PickerP2();
@@ -55,6 +58,7 @@ namespace RaceGameExample
         //Porche
         private void button4_Click(object sender, EventArgs e)
         {
+            Sounds.Klik.Play();
             CarP1 = 4;
             this.Visible = false;
             var myForm = new PickerP2();
