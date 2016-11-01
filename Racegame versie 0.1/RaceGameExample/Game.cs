@@ -21,7 +21,6 @@ namespace RaceGameExample {
         int Carplayer1;
         int Carplayer2;
         int Map;
-        int times = 0;
 
         public formRaceGame()
         {
