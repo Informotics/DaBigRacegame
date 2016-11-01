@@ -36,7 +36,7 @@ namespace RaceGameExample
         private void button3_Click(object sender, EventArgs e)
         {
             Sounds.Klik.Play();
-            Map = 1;
+            Map = 3;
             this.Visible = false;
             var myForm = new PickerP1();
             myForm.Show();

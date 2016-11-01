@@ -135,6 +135,7 @@
     <Content Include="Resources\PATS.WAV" />
     <None Include="Resources\Player1.png" />
     <None Include="Resources\Player2.png" />
+    <None Include="Resources\RacebaanDesert.png" />
     <Content Include="Resources\Refill.WAV" />
     <Content Include="Resources\Victory.wav" />
     <None Include="Resources\Click1.WAV" />
