@@ -28,15 +28,6 @@ namespace RaceGameExample {
         /// <summary>
         /// Constructor of the car class
         /// </summary>
-        /// <param name="postionx">starting position of the car (Horiz)</param>
-        /// <param name="positiony">starting position of the car (Vert)</param>
-        /// <param name="rotation">starting rotation of the car (0 for car is pointing left)</param>
-        /// <param name="speed">starting speed of the car</param>
-        /// <param name="leftKey">the key to steer left</param>
-        /// <param name="rightKey">the key to steer right</param>
-        /// <param name="throttleKey">the key to throttle</param>
-        /// <param name="brakeKey">the key to brake/reverse</param>
-        /// <param name="image">the image used to draw the car</param>
         public Car(int postionx, int positiony, float rotation, double speed, Keys leftKey, Keys rightKey, Keys throttleKey, Keys  brakeKey, Image image)
         {
             position.X = postionx;
@@ -107,9 +98,69 @@ namespace RaceGameExample {
         public void checkpointCount ()
         {
             Map = ChooseMap.Map;
+
+            //Map 1 checkpoints en pit
             if (Map == 1)
             {
-                if (getPosition().X > 124 && getPosition().X < 360 && getPosition().Y > 510 && getPosition().Y < 620)
+                //Set de positie van de pitstop
+                if (getPosition().X > 124 && getPosition().X < 350 && getPosition().Y > 510 && getPosition().Y < 595)
+                {
+                    //Refuel en limit speed
+                    pit = true;
+                    fuel = 90;
+                    OutFuel = false;
+                    speed = speed + .1;
+                    if (speed >= 1.5)
+                    {
+                        speed = 1.5;
+                    }
+                }
+                if (pit)
+                {
+                    pit = false;
+                    //Telt op zolang je erin zit
+                    pitCount++;
+                }
+
+                //Set de positie van de checkpoints
+                if (getPosition().X > 250 && getPosition().X < 370 && getPosition().Y > 150 && getPosition().Y < 200)
+                {
+                    check1 = true;
+                }
+                if (getPosition().X > 840 && getPosition().X < 1010 && getPosition().Y > 560 && getPosition().Y < 620)
+                {
+                    check2 = true;
+                }
+                if (getPosition().Y > 310 && getPosition().Y < 430 && getPosition().X > 540 && getPosition().X < 580)
+                {
+                    check3 = true;
+                }
+                if (getPosition().Y > 520 && getPosition().Y < 745 && getPosition().X > 210 && getPosition().X < 260 && check2)
+                {
+                    finish = true;
+                }
+
+                //Check of alle checkpoints true zijn
+                if (check1 && check2 && check3 && finish)
+                {
+                    check1 = false;
+                    check2 = false;
+                    check3 = false;
+                    finish = false;
+                    laps++;
+                    //Laps + 1 tot laps = 4
+                    if (laps > 3 && pitCount > 0)
+                    {
+                        //Game end
+                        MessageBox.Show("you win");
+                    }
+                }
+            }
+
+            //Map 2 checkpoints en pit
+            if (Map == 2)
+            {
+                if ((getPosition().X > 20 && getPosition().X < 115 && getPosition().Y > 95 && getPosition().Y < 355) || (getPosition().X > 100 && getPosition().X < 140 && getPosition().Y > 85 && getPosition().Y < 230))
                 {
                     pit = true;
                     fuel = 90;
@@ -121,44 +172,98 @@ namespace RaceGameExample {
                     }
 
                 }
-                    if (pit)
+                if (pit)
+                {
+                    pit = false;
+                    pitCount++;
+                }
+
+                if (getPosition().X > 485 && getPosition().X < 495 && getPosition().Y > 150 && getPosition().Y < 270)
+                {
+                    check1 = true;
+                }
+                if (getPosition().X > 820 && getPosition().X < 960 && getPosition().Y > 370 && getPosition().Y < 400)
+                {
+                    check2 = true;
+                }
+                if (getPosition().X > 270 && getPosition().X < 290 && getPosition().Y > 610 && getPosition().Y < 745)
+                {
+                    check3 = true;
+                }
+                if (getPosition().Y > 230 && getPosition().Y < 250 && getPosition().X > 20 && getPosition().X < 250 && check2)
+                {
+                    finish = true;
+                }
+                if (check1 && check2 && check3 && finish)
+                {
+                    check1 = false;
+                    check2 = false;
+                    check3 = false;
+                    finish = false;
+                    laps++;
+                    if (laps > 3 && pitCount > 0)
                     {
-                        pit = false;
-                        pitCount++;
+                        MessageBox.Show("you win");
+                    }
+                }
+            }
+
+            //Map 3 checkpoints en pit
+            if (Map == 3)
+            {
+                if ((getPosition().X > 250 && getPosition().X < 370 && getPosition().Y > 150 && getPosition().Y < 250 ) || (getPosition().X > 300 && getPosition().X < 360 && getPosition().Y > 140 && getPosition().Y < 290))
+                {
+                    pit = true;
+                    fuel = 90;
+                    OutFuel = false;
+                    speed = speed + .1;
+                    if (speed >= 0.8)
+                    {
+                        speed = 0.8;
                     }
 
-                    if (getPosition().X > 250 && getPosition().X < 370 && getPosition().Y > 150 && getPosition().Y < 200)
+                }
+                if (pit)
+                {
+                    pit = false;
+                    pitCount++;
+                }
+
+                if (getPosition().X > 370 && getPosition().X < 490 && getPosition().Y > 340 && getPosition().Y < 350)
+                {
+                    check1 = true;
+                }
+                if (getPosition().X > 800 && getPosition().X < 930 && getPosition().Y > 550 && getPosition().Y < 560)
+                {
+                    check2 = true;
+                }
+                if (getPosition().X > 125 && getPosition().X < 270 && getPosition().Y > 415 && getPosition().Y < 425)
+                {
+                    check3 = true;
+                }
+                if (getPosition().Y > 30 && getPosition().Y < 150 && getPosition().X > 540 && getPosition().X < 555 && check2)
+                {
+                    finish = true;
+                }
+                if (check1 && check2 && check3 && finish)
+                {
+                    check1 = false;
+                    check2 = false;
+                    check3 = false;
+                    finish = false;
+                    laps++;
+                    if (laps > 3 && pitCount > 0)
                     {
-                        check1 = true;
+                        MessageBox.Show("you win");
                     }
-                    if (getPosition().X > 900 && getPosition().X < 1010 && getPosition().Y > 560 && getPosition().Y < 620)
-                    {
-                        check2 = true;
-                    }
-                    if (getPosition().Y > 310 && getPosition().Y < 430 && getPosition().X > 540 && getPosition().X < 580)
-                    {
-                        check3 = true;
-                    }
-                    if (getPosition().Y > 540 && getPosition().Y < 745 && getPosition().X > 210 && getPosition().X < 260 && check2)
-                    {
-                        finish = true;
-                    }
-                    if (check1 && check2 && check3 && finish)
-                    {
-                        check1 = false;
-                        check2 = false;
-                        check3 = false;
-                        finish = false;
-                        laps++;
-                        if (laps == 4 && pitCount > 0)
-                        {
-                            MessageBox.Show("you win");
-                        }
-                    }
+                }
             }
 
         }
 
+        /// <summary>
+        /// Verander de positieve snelheid van de auto als vooruit is ingedrukt
+        /// </summary>
         private void accelerate() 
         {
             if (OutFuel == false){
@@ -170,6 +275,9 @@ namespace RaceGameExample {
                 }         
         }
 
+        /// <summary>
+        /// Verandere de negatieve snelheid van de auto als achteruit is ingedrukt
+        /// </summary>
         private void brake() 
         {
             if (OutFuel == false && pit == false)
@@ -183,6 +291,9 @@ namespace RaceGameExample {
             }
         }
 
+        /// <summary>
+        /// Stop de auto langzaam als achteruit of vooruit wordt losgelaten
+        /// </summary>
         private void coast()
         {
             if (speed >= .02)
@@ -193,6 +304,9 @@ namespace RaceGameExample {
                 speed = 0;
         }
 
+        /// <summary>
+        /// Verander de kant waar de auto op gaat naar rechts
+        /// </summary>
         private void rotateRight()
         {
             if (speed != 0)
@@ -208,6 +322,9 @@ namespace RaceGameExample {
             }
         }
 
+        /// <summary>
+        /// Verander de kant waar de auto op gaat naar links
+        /// </summary>
         private void rotateLeft()
         {
             if (speed != 0)
@@ -239,13 +356,13 @@ namespace RaceGameExample {
         }
 
         /// <summary>
-        /// Calculates the new position for the car
+        /// Bepaalt de nieuwe positie van de auto`s
         /// </summary>
         public void calculateNewPosition()
         {
             changeSpeed();
-            position.X -= (int)Math.Round(speed * (Math.Cos(rotation * Math.PI / 180))); //pure magic here!
-            position.Y -= (int)Math.Round(speed * (Math.Sin(rotation * Math.PI / 180))); //pure next lvl coding
+            position.X -= (int)Math.Round(speed * (Math.Cos(rotation * Math.PI / 180)));
+            position.Y -= (int)Math.Round(speed * (Math.Sin(rotation * Math.PI / 180))); 
         }
     }
 }
