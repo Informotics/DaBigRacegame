@@ -121,6 +121,7 @@
     <None Include="Resources\Racebaan.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\arrows.png" />
     <Content Include="Resources\BANG.WAV">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
