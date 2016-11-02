@@ -149,9 +149,15 @@ namespace RaceGameExample {
                     finish = false;
                     laps++;
                     //Laps + 1 tot laps = 4
+                    if (laps > 2)
+                    {
+                        Sounds.Finallap.Play();
+                    }
                     if (laps > 3 && pitCount > 0)
                     {
                         //Game end
+                        Sounds.Finish.PlaySync();
+                        Sounds.Victory.Play();
                         MessageBox.Show("you win");
                     }
                 }
