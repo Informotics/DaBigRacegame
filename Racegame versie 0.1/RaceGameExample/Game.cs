@@ -265,35 +265,26 @@ namespace RaceGameExample {
                 g.TranslateTransform(-moveX, -moveY);
 
                 //auto collision
-                //Rectangle rectangle1 = new Rectangle(cars[0].getPosition().X, cars[0].getPosition().Y, 50, 26);
-                //Rectangle rectangle2 = new Rectangle(cars[1].getPosition().X, cars[1].getPosition().Y, 50, 26);
-                Rectangle rectangle3 = new Rectangle(cars[0].getPosition().X, cars[0].getPosition().Y, 10, 26);
-                Rectangle rectangle4 = new Rectangle(cars[1].getPosition().X, cars[1].getPosition().Y, 10, 26);
-                //g.DrawRectangle(Pens.Red, rectangle1);
-                //g.DrawRectangle(Pens.Red, rectangle2);
-                g.DrawRectangle(Pens.Red, rectangle3);
-                g.DrawRectangle(Pens.Red, rectangle4);
+                Rectangle box = new Rectangle(car.getPosition().X, car.getPosition().Y, 58, 26);
 
-                //if (rectangle1.IntersectsWith(rectangle2))
-                //{
-                //    car.speed = 1.5;
-                //}
-                if (rectangle3.IntersectsWith(rectangle4))
+                g.DrawRectangle(Pens.Red, box);
+
+                if (box.IntersectsWith(box))
                 {
                     car.speed = 0;
                 }
-                
-
-
-
-                    //Coords van auto
-                    String drawPos = "X: " + car.getPosition().X + " Y:" +car.getPosition().Y;
-                DrawString(g, drawPos, car.getPosition().X + 20, car.getPosition().Y + 20);
 
                 //Draw de auto
                 g.DrawImage(car.getImage(), car.getPosition().X, car.getPosition().Y);
                 g.ResetTransform();
                 CarIndex += 2;
+
+
+                //Coords van auto
+                String drawPos = "X: " + car.getPosition().X + " Y:" +car.getPosition().Y;
+                DrawString(g, drawPos, car.getPosition().X + 20, car.getPosition().Y + 20);
+
+                
             }
         }
         //Properties van de drawstring
