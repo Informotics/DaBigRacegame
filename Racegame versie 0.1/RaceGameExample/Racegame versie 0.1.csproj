@@ -164,6 +164,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <EmbeddedResource Include="Resources\Finish.WAV" />
+    <Content Include="Resources\Go.WAV" />
     <Content Include="Resources\KAPOW.WAV">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -177,6 +178,8 @@
     <Content Include="Resources\PATS.WAV">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Player1wins.WAV" />
+    <None Include="Resources\Player2wins.WAV" />
     <Content Include="Resources\Porsche 911 GTR RS.png" />
     <None Include="Resources\RacebaanColor.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
