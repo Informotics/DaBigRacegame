@@ -13,7 +13,7 @@ namespace RaceGameExample {
         private bool leftPressed = false, rightPressed = false, throttlePressed = false, brakePressed = false;
         private Keys leftKey, rightKey, throttleKey, brakeKey;
         private Image image;
-        public float fuel = 500;
+        public float fuel = 90;
         public int laps = 1;
         private int Map;
         const float rotateAmount = 3.0f;
