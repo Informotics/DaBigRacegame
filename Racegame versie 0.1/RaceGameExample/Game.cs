@@ -223,6 +223,10 @@ namespace RaceGameExample {
 
         void Draw(Graphics g) {
             int CarIndex = 1;
+            Rectangle car1 = new Rectangle(cars[0].getPosition().X, cars[0].getPosition().Y, cars[0].getImage().Width, cars[0].getImage().Height);
+            Rectangle car2 = new Rectangle(cars[1].getPosition().X, cars[1].getPosition().Y, cars[1].getImage().Width, cars[1].getImage().Height);
+
+
             foreach (Car car in cars) {
                 //Start checkpoint code en fuel code
                 car.checkpointCount();
@@ -264,14 +268,17 @@ namespace RaceGameExample {
                 g.RotateTransform(car.getRotation());
                 g.TranslateTransform(-moveX, -moveY);
 
-                //auto collision
-                Rectangle box = new Rectangle(car.getPosition().X, car.getPosition().Y, car.getImage().Width, car.getImage().Height);
+                g.DrawRectangle(Pens.Red, car1);
+                g.DrawRectangle(Pens.Red, car2);
 
-                g.DrawRectangle(Pens.Red, box);
-                //always true
-                if (box.IntersectsWith(box))
+                if (car1.IntersectsWith(car2))
                 {
-                    //iets doen met die auto
+                    cars[0].speed = -1;
+                }
+
+                if (car2.IntersectsWith(car1))
+                {
+                    cars[1].speed = -1;
                 }
 
                 //Draw de auto
