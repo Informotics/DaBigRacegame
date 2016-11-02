@@ -121,26 +121,13 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\BANG.WAV" />
     <Content Include="Resources\BMW M6 GT3.png" />
-    <Content Include="Resources\BOOM.WAV" />
-    <Content Include="Resources\Car1Speed2.WAV" />
-    <Content Include="Resources\Car1Speed3.WAV" />
-    <Content Include="Resources\Car2Speed1.WAV" />
-    <Content Include="Resources\Car2Speed2.WAV" />
-    <Content Include="Resources\Car2Speed3.WAV" />
+    <EmbeddedResource Include="Resources\Victory.wav" />
     <None Include="Resources\Close.png" />
-    <Content Include="Resources\KAPOW.WAV" />
-    <Content Include="Resources\KLETS.WAV" />
+    <None Include="Resources\Eend.gif" />
     <None Include="Resources\maps.png" />
-    <Content Include="Resources\Offroad.WAV" />
-    <Content Include="Resources\PATS.WAV" />
     <None Include="Resources\Player1.png" />
     <None Include="Resources\Player2.png" />
     <None Include="Resources\RacebaanDesert.png" />
-    <Content Include="Resources\Refill.WAV" />
-    <Content Include="Resources\Victory.wav" />
-    <None Include="Resources\Click1.WAV" />
-    <Content Include="Resources\Countdown.WAV" />
-    <EmbeddedResource Include="Resources\Victory.wav" />
     <EmbeddedResource Include="Resources\Countdown.WAV" />
     <EmbeddedResource Include="Resources\Car1Speed1.WAV" />
     <EmbeddedResource Include="Resources\Car1Speed2.WAV" />
@@ -161,6 +148,7 @@
     <Content Include="Resources\Porsche 911 GTR RS.png" />
     <Content Include="Resources\RacebaanSnow.png" />
     <EmbeddedResource Include="Resources\Refill.WAV" />
+    <EmbeddedResource Include="Resources\Refill2.WAV" />
     <Content Include="Resources\Splash.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

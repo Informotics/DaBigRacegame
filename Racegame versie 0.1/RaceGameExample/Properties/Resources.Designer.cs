@@ -89,6 +89,16 @@ namespace RaceGameExample.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Button {
+            get {
+                object obj = ResourceManager.GetObject("Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream Car1Speed1 {
@@ -157,6 +167,16 @@ namespace RaceGameExample.Properties {
         internal static System.IO.UnmanagedMemoryStream Countdown {
             get {
                 return ResourceManager.GetStream("Countdown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Eend {
+            get {
+                object obj = ResourceManager.GetObject("Eend", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -310,6 +330,15 @@ namespace RaceGameExample.Properties {
         internal static System.IO.UnmanagedMemoryStream Refill {
             get {
                 return ResourceManager.GetStream("Refill", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Refill2 {
+            get {
+                return ResourceManager.GetStream("Refill2", resourceCulture);
             }
         }
         
