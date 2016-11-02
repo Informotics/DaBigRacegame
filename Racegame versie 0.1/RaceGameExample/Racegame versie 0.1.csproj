@@ -34,6 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,6 +45,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Car.cs" />
@@ -119,7 +121,9 @@
     <None Include="Resources\Racebaan.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\BANG.WAV" />
+    <Content Include="Resources\BANG.WAV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\BMW M6 GT3.png" />
     <EmbeddedResource Include="Resources\Victory.wav" />
     <None Include="Resources\Close.png" />
@@ -128,27 +132,57 @@
     <None Include="Resources\Player1.png" />
     <None Include="Resources\Player2.png" />
     <None Include="Resources\RacebaanDesert.png" />
-    <EmbeddedResource Include="Resources\Countdown.WAV" />
-    <EmbeddedResource Include="Resources\Car1Speed1.WAV" />
-    <EmbeddedResource Include="Resources\Car1Speed2.WAV" />
-    <EmbeddedResource Include="Resources\Car1Speed3.WAV" />
-    <EmbeddedResource Include="Resources\Car2Speed1.WAV" />
-    <EmbeddedResource Include="Resources\Car2Speed2.WAV" />
-    <EmbeddedResource Include="Resources\Car2Speed3.WAV" />
+    <Content Include="Resources\Countdown.WAV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Car1Speed1.WAV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Car1Speed2.WAV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Car1Speed3.WAV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Car2Speed1.WAV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Car2Speed2.WAV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Car2Speed3.WAV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <EmbeddedResource Include="Resources\Click1.WAV" />
-    <EmbeddedResource Include="Resources\BOOM.WAV" />
+    <Content Include="Resources\BOOM.WAV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\Ferari 458 Italia.png" />
-    <EmbeddedResource Include="Resources\Finallap.WAV" />
+    <Content Include="Resources\Finallap.WAV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <EmbeddedResource Include="Resources\Finish.WAV" />
-    <EmbeddedResource Include="Resources\KAPOW.WAV" />
-    <EmbeddedResource Include="Resources\KLETS.WAV" />
+    <Content Include="Resources\KAPOW.WAV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\KLETS.WAV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\Mercedes AMG GTR.png" />
-    <EmbeddedResource Include="Resources\Offroad.WAV" />
-    <EmbeddedResource Include="Resources\PATS.WAV" />
+    <Content Include="Resources\Offroad.WAV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\PATS.WAV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\Porsche 911 GTR RS.png" />
     <Content Include="Resources\RacebaanSnow.png" />
-    <EmbeddedResource Include="Resources\Refill.WAV" />
-    <EmbeddedResource Include="Resources\Refill2.WAV" />
+    <Content Include="Resources\Refill.WAV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Refill2.WAV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\Splash.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

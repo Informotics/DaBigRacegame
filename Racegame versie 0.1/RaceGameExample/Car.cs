@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Media;
+using System.Windows.Media;
+using System.IO;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -282,8 +285,11 @@ namespace RaceGameExample {
                         speed = 5.0;
                         }
                     }
-                }         
+            }
         }
+
+           
+
 
         /// <summary>
         /// Verandere de negatieve snelheid van de auto als achteruit is ingedrukt
