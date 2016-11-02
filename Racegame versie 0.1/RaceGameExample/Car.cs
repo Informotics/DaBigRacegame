@@ -7,9 +7,11 @@ using System.Windows.Media;
 using System.IO;
 using System.Drawing;
 using System.Windows.Forms;
+using RaceGameExample.Properties;
 
 namespace RaceGameExample {
     class Car {
+        Bitmap myBitmap = new Bitmap(Properties.Resources.RacebaanColor);
         private Point position;
         private float rotation;
         public double speed;
@@ -369,6 +371,27 @@ namespace RaceGameExample {
                 rotateLeft();
             else if (rightPressed)
                 rotateRight();
+
+
+
+                // Get the color of a pixel within myBitmap.
+                Color pixelColor = myBitmap.GetPixel(getPosition().X, getPosition().Y);
+
+                if (pixelColor.ToArgb() == Color.Red.ToArgb())
+                {
+                    speed = speed - .5;
+
+                    if (speed <= 1)
+                    {
+                        speed = 1;
+                    }
+            }
+
+                if (pixelColor.ToArgb() == Color.Yellow.ToArgb())
+                {
+                    speed = 0;
+                }
+            
         }
 
         /// <summary>

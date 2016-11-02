@@ -176,6 +176,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\Porsche 911 GTR RS.png" />
+    <None Include="Resources\RacebaanColor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <Content Include="Resources\RacebaanSnow.png" />
     <Content Include="Resources\Refill.WAV">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
