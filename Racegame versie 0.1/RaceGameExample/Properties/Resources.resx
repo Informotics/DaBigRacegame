@@ -130,8 +130,8 @@
   <data name="BANG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BANG.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Car1Speed3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Car1Speed3.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="wasd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wasd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,8 +160,11 @@
   <data name="Finish" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Finish.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Countdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Countdown.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Car1Speed3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Car1Speed3.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="terugknop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terugknop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BOOM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BOOM.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -190,11 +193,14 @@
   <data name="Car2Speed3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Car2Speed3.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Porsche 911 GTR RS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Porsche 911 GTR RS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Player1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Player1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Porsche 911 GTR RS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Porsche 911 GTR RS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RacebaanSnowColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RacebaanSnowColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Car1Speed2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Car1Speed2.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -205,11 +211,17 @@
   <data name="Offroad" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Offroad.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="RacebaanDesertColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RacebaanDesertColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Mercedes AMG GTR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mercedes AMG GTR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Racebaan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Racebaan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Countdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Countdown.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="PATS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PATS.WAV;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -217,13 +229,7 @@
   <data name="RacebaanColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RacebaanColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="terugknop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\terugknop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RacebaanDesertColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RacebaanDesertColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RacebaanSnowColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RacebaanSnowColor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arrows" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrows.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
