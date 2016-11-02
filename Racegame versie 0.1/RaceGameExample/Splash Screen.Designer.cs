@@ -35,12 +35,12 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button1.BackgroundImage = global::RaceGameExample.Properties.Resources.Button;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(712, 462);
+            this.button1.Location = new System.Drawing.Point(408, 512);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(266, 142);
+            this.button1.Size = new System.Drawing.Size(214, 104);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Lets go!";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -52,6 +52,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1024, 768);
             this.Controls.Add(this.button1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1024, 768);
