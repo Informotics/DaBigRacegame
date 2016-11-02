@@ -265,19 +265,21 @@ namespace RaceGameExample {
                 g.TranslateTransform(-moveX, -moveY);
 
                 //auto collision
-                int car1_X = cars[0].getPosition().X;
-                int car1_Y = cars[0].getPosition().Y;
-                int car2_X = cars[1].getPosition().X;
-                int car2_Y = cars[1].getPosition().Y;
-
-                Rectangle rectangle1 = new Rectangle(car.getPosition().X, car.getPosition().Y, 58, 26);
-
+                Rectangle rectangle1 = new Rectangle(cars[0].getPosition().X, cars[0].getPosition().Y, 50, 20);
+                Rectangle rectangle2 = new Rectangle(cars[1].getPosition().X, cars[1].getPosition().Y, 50, 20);
                 g.DrawRectangle(Pens.Red, rectangle1);
+                g.DrawRectangle(Pens.Red, rectangle2);
+
+                if (rectangle1.IntersectsWith(rectangle2))
+                {
+                    MessageBox.Show("madness");
+                }
+                
 
 
 
-                //Coords van auto
-                String drawPos = "X: " + car.getPosition().X + " Y:" +car.getPosition().Y;
+                    //Coords van auto
+                    String drawPos = "X: " + car.getPosition().X + " Y:" +car.getPosition().Y;
                 DrawString(g, drawPos, car.getPosition().X + 20, car.getPosition().Y + 20);
 
                 //Draw de auto
