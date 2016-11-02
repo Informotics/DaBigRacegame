@@ -160,7 +160,7 @@ namespace RaceGameExample {
             //Map 2 checkpoints en pit
             if (Map == 2)
             {
-                if ((getPosition().X > 20 && getPosition().X < 115 && getPosition().Y > 95 && getPosition().Y < 355) || (getPosition().X > 100 && getPosition().X < 140 && getPosition().Y > 85 && getPosition().Y < 230))
+                if ((getPosition().X > 20 && getPosition().X < 95 && getPosition().Y > 95 && getPosition().Y < 340) || (getPosition().X > 100 && getPosition().X < 140 && getPosition().Y > 85 && getPosition().Y < 230))
                 {
                     pit = true;
                     fuel = 90;
@@ -268,9 +268,13 @@ namespace RaceGameExample {
         {
             if (OutFuel == false){
                     speed = speed + .1;
-                    if (speed >= 5.0)
+                    if (speed >= 3.0)
                     {
+                        speed = speed + .05;
+                        if (speed >= 5.0)
+                        {
                         speed = 5.0;
+                        }
                     }
                 }         
         }

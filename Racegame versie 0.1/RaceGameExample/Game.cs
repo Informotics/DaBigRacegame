@@ -242,7 +242,7 @@ namespace RaceGameExample {
                 //DrawString(g, drawFinish, 300, 40 * CarIndex);
 
                 //ShowSpeed
-                String drawSpeed = "Speed: " + Math.Round(car.speed * 64);
+                String drawSpeed = "Speed: " + Math.Round(car.speed * 56) + "Km/u";
                 DrawString(g, drawSpeed, 0, 10 * CarIndex);
 
                 //ShowLaps
