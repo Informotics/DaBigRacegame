@@ -106,14 +106,16 @@ namespace RaceGameExample {
             //Map 1 checkpoints en pit
             if (Map == 1)
             {
+                //Colormap oproepen
                 Bitmap map1 = new Bitmap(Properties.Resources.RacebaanColor);
                 System.Drawing.Color pixelColor = map1.GetPixel(getPosition().X, getPosition().Y);
 
+                //Rood is kleur van buiten de baan, hij limit de speed als je op deze kleur zit
                 if (pixelColor.ToArgb() == System.Drawing.Color.Red.ToArgb())
                 {
                     if (speed > 0)
                     {
-                        speed = speed - .25;
+                        speed = speed - .8;
 
                         if (speed <= 1.0)
                         {
@@ -122,20 +124,21 @@ namespace RaceGameExample {
                     }
                     if (speed < 0)
                     {
-                        speed = speed + .25;
+                        speed = speed + .8;
 
-                        if (speed <= - 1.0)
+                        if (speed <= -1.0)
                         {
-                            speed = - 1.0;
+                            speed = -1.0;
                         }
                     }
                 }
 
+                //Geel is de kleur van objecten
                 if (pixelColor.ToArgb() == System.Drawing.Color.Yellow.ToArgb())
                 {
                     if (speed > 0)
                     {
-                        speed = speed - .35;
+                        speed = speed - 1;
 
                         if (speed <= .5)
                         {
@@ -144,11 +147,11 @@ namespace RaceGameExample {
                     }
                     if (speed < 0)
                     {
-                        speed = speed + .35;
+                        speed = speed + 1;
 
-                        if (speed <= - .5)
+                        if (speed <= -.5)
                         {
-                            speed = - .5;
+                            speed = -.5;
                         }
                     }
                 }
@@ -170,7 +173,7 @@ namespace RaceGameExample {
                 {
                     pit = false;
                     //Telt op zolang je erin zit
-                    pitCount++;
+                    pitCount = 1;
                 }
 
                 //Set de positie van de checkpoints
@@ -224,7 +227,7 @@ namespace RaceGameExample {
                 {
                     if (speed > 0)
                     {
-                        speed = speed - .25;
+                        speed = speed - .8;
 
                         if (speed <= 1.0)
                         {
@@ -233,7 +236,7 @@ namespace RaceGameExample {
                     }
                     if (speed < 0)
                     {
-                        speed = speed + .25;
+                        speed = speed + .8;
 
                         if (speed <= -1.0)
                         {
@@ -246,7 +249,7 @@ namespace RaceGameExample {
                 {
                     if (speed > 0)
                     {
-                        speed = speed - .35;
+                        speed = speed - 1;
 
                         if (speed <= .5)
                         {
@@ -255,7 +258,7 @@ namespace RaceGameExample {
                     }
                     if (speed < 0)
                     {
-                        speed = speed + .35;
+                        speed = speed + 1;
 
                         if (speed <= -.5)
                         {
@@ -263,7 +266,8 @@ namespace RaceGameExample {
                         }
                     }
                 }
-                if ((getPosition().X > 20 && getPosition().X < 85 && getPosition().Y > 90 && getPosition().Y < 320) || (getPosition().X > 100 && getPosition().X < 140 && getPosition().Y > 85 && getPosition().Y < 215))
+
+                if ((getPosition().X > 20 && getPosition().X < 85 && getPosition().Y > 90 && getPosition().Y < 320) || (getPosition().X > 100 && getPosition().X < 130 && getPosition().Y > 85 && getPosition().Y < 215))
                 {
                     pit = true;
                     fuel = 90;
@@ -278,7 +282,7 @@ namespace RaceGameExample {
                 if (pit)
                 {
                     pit = false;
-                    pitCount++;
+                    pitCount = 1;
                 }
 
                 if (getPosition().X > 485 && getPosition().X < 495 && getPosition().Y > 130 && getPosition().Y < 290)
@@ -293,7 +297,7 @@ namespace RaceGameExample {
                 {
                     check3 = true;
                 }
-                if (getPosition().Y > 230 && getPosition().Y < 240 && getPosition().X > 0 && getPosition().X < 260 && check2)
+                if (getPosition().Y > 15 && getPosition().Y < 155 && getPosition().X > 315 && getPosition().X < 325 && check2)
                 {
                     finish = true;
                 }
@@ -306,6 +310,8 @@ namespace RaceGameExample {
                     laps++;
                     if (laps > 3 && pitCount > 0)
                     {
+                        Sounds.Finish.PlaySync();
+                        Sounds.Victory.Play();
                         MessageBox.Show("you win");
                     }
                 }
@@ -321,7 +327,7 @@ namespace RaceGameExample {
                 {
                     if (speed > 0)
                     {
-                        speed = speed - .25;
+                        speed = speed - .8;
 
                         if (speed <= 1.0)
                         {
@@ -330,11 +336,33 @@ namespace RaceGameExample {
                     }
                     if (speed < 0)
                     {
-                        speed = speed + .25;
+                        speed = speed + .8;
 
                         if (speed <= -1.0)
                         {
                             speed = -1.0;
+                        }
+                    }
+                }
+
+                if (pixelColor.ToArgb() == System.Drawing.Color.Yellow.ToArgb())
+                {
+                    if (speed > 0)
+                    {
+                        speed = speed - 1;
+
+                        if (speed <= .5)
+                        {
+                            speed = .5;
+                        }
+                    }
+                    if (speed < 0)
+                    {
+                        speed = speed + 1;
+
+                        if (speed <= -.5)
+                        {
+                            speed = -.5;
                         }
                     }
                 }
@@ -375,7 +403,7 @@ namespace RaceGameExample {
                 if (pit)
                 {
                     pit = false;
-                    pitCount++;
+                    pitCount = 1;
                 }
 
                 if (getPosition().X > 355 && getPosition().X < 510 && getPosition().Y > 340 && getPosition().Y < 350)
@@ -403,6 +431,8 @@ namespace RaceGameExample {
                     laps++;
                     if (laps > 3 && pitCount > 0)
                     {
+                        Sounds.Finish.PlaySync();
+                        Sounds.Victory.Play();
                         MessageBox.Show("you win");
                     }
                 }

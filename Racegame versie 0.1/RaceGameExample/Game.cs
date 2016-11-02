@@ -88,44 +88,44 @@ namespace RaceGameExample
                 eendgif.Visible = false;
                 if (Carplayer2 == 1)
                 {
-                    Car car2 = new Car(138, 280, 90, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "BMW-M6-GT3.png")));
+                    Car car2 = new Car(235, 60, 180, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "BMW-M6-GT3.png")));
                     cars.Add(car2);
                 }
                 if (Carplayer2 == 2)
                 {
-                    Car car2 = new Car(138, 280, 90, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Ferarri458Italia.png")));
+                    Car car2 = new Car(235, 60, 180, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Ferarri458Italia.png")));
                     cars.Add(car2);
                 }
                 if (Carplayer2 == 3)
                 {
-                    Car car2 = new Car(138, 280, 90, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "MercedesAMG-GTR.png")));
+                    Car car2 = new Car(235, 60, 180, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "MercedesAMG-GTR.png")));
                     cars.Add(car2);
                 }
                 if (Carplayer2 == 4)
                 {
-                    Car car2 = new Car(138, 280, 90, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Porsche911-GTR-RS.png")));
+                    Car car2 = new Car(235, 60, 180, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Porsche911-GTR-RS.png")));
                     cars.Add(car2);
                 }
                 //Check welke auto player 1 koos en maak hem aan
 
                 if (Carplayer1 == 1)
                 {
-                    Car car1 = new Car(196, 280, 90, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "BMW-M6-GT3.png")));
+                    Car car1 = new Car(235, 90, 180, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "BMW-M6-GT3.png")));
                     cars.Add(car1);
                 }
                 if (Carplayer1 == 2)
                 {
-                    Car car1 = new Car(196, 280, 90, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Ferarri458Italia.png")));
+                    Car car1 = new Car(235, 90, 180, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Ferarri458Italia.png")));
                     cars.Add(car1);
                 }
                 if (Carplayer1 == 3)
                 {
-                    Car car1 = new Car(196, 280, 90, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "MercedesAMG-GTR.png")));
+                    Car car1 = new Car(235, 90, 180, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "MercedesAMG-GTR.png")));
                     cars.Add(car1);
                 }
                 if (Carplayer1 == 4)
                 {
-                    Car car1 = new Car(196, 280, 90, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Porsche911-GTR-RS.png")));
+                    Car car1 = new Car(235, 90, 180, 0, Keys.A, Keys.D, Keys.W, Keys.S, new Bitmap(Path.Combine(Environment.CurrentDirectory, "Porsche911-GTR-RS.png")));
                     cars.Add(car1);
                 }
                 //Check welke auto player 2 koos en maak hem aan
@@ -261,57 +261,190 @@ namespace RaceGameExample
 
                 if (Map == 1)
                 {
+                    //Showplayer
+                    if (CarIndex == 2)
+                    {
+                        String DrawPlayer = "Player 1: ";
+                        DrawString(g, DrawPlayer, 12, 12);
+                    }
+                    if (CarIndex == 1)
+                    {
+                        String DrawPlayer = "Player 2: ";
+                        DrawString(g, DrawPlayer, 12, 142);
+                    }
+
                     //ShowSpeed
-                    String drawSpeed = "Speed: " + Math.Round(car.speed * 56) + "Km/u";
-                    DrawString(g, drawSpeed, 0, 10 * CarIndex);
+                    if (CarIndex == 2)
+                    {
+                        String drawSpeed = "Speed: " + Math.Round(car.speed * 45) + "km/u";
+                        DrawString(g, drawSpeed, 12, 32);
+                    }
+                    if (CarIndex == 1)
+                    {
+                        String drawSpeed = "Speed: " + Math.Round(car.speed * 45) + "km/u";
+                        DrawString(g, drawSpeed, 12, 162);
+                    }
 
                     //ShowLaps
-                    String drawLaps = "Lap: " + car.laps + "/3";
-                    DrawString(g, drawLaps, 120, 10 * CarIndex);
+                    if (CarIndex == 2)
+                    {
+                        String drawLaps = "Lap: " + car.laps + "/3";
+                        DrawString(g, drawLaps, 12, 52);
+                    }
+                    if (CarIndex == 1)
+                    {
+                        String drawLaps = "Lap: " + car.laps + "/3";
+                        DrawString(g, drawLaps, 12, 182);
+                    }
 
                     //ShowFuel
-                    String drawFuel = "Fuel: " + Math.Round(car.fuel);
-                    DrawString(g, drawFuel, 220, 10 * CarIndex);
+                    if (CarIndex == 2)
+                    {
+                        String drawFuel = "Fuel: " + Math.Round(car.fuel);
+                        DrawString(g, drawFuel, 12, 72);
+                    }
+                    if (CarIndex == 1)
+                    {
+                        String drawFuel = "Fuel: " + Math.Round(car.fuel);
+                        DrawString(g, drawFuel, 12, 202);
+                    }
 
                     //ShowPit
-                    String drawPit = "Pits: " + car.pitCount;
-                    DrawString(g, drawPit, 320, 10 * CarIndex);
+                    if (CarIndex == 2)
+                    {
+                        String drawPit = "Pits: " + car.pitCount;
+                        DrawString(g, drawPit, 12, 92);
+                    }
+                    if (CarIndex == 1)
+                    {
+                        String drawPit = "Pits: " + car.pitCount;
+                        DrawString(g, drawPit, 12, 222);
+                    }
                 }
+
                 if (Map == 2)
                 {
+                    //Showplayer
+                    if (CarIndex == 2)
+                    {
+                        String DrawPlayer = "Player 1: ";
+                        DrawString(g, DrawPlayer, 690, 620);
+                    }
+                    if (CarIndex == 1)
+                    {
+                        String DrawPlayer = "Player 2: ";
+                        DrawString(g, DrawPlayer, 860, 620);
+                    }
+
                     //ShowSpeed
-                    String drawSpeed = "Speed: " + Math.Round(car.speed * 56) + "Km/u";
-                    DrawString(g, drawSpeed, 0, 10 * CarIndex);
+                    if (CarIndex == 2)
+                    {
+                        String drawSpeed = "Speed: " + Math.Round(car.speed * 45) + "km/u";
+                        DrawString(g, drawSpeed, 690, 642);
+                    }
+                    if (CarIndex == 1)
+                    {
+                        String drawSpeed = "Speed: " + Math.Round(car.speed * 45) + "km/u";
+                        DrawString(g, drawSpeed, 860, 642);
+                    }
 
                     //ShowLaps
-                    String drawLaps = "Lap: " + car.laps + "/3";
-                    DrawString(g, drawLaps, 120, 10 * CarIndex);
+                    if (CarIndex == 2)
+                    {
+                        String drawLaps = "Lap: " + car.laps + "/3";
+                        DrawString(g, drawLaps, 690, 664);
+                    }
+                    if (CarIndex == 1)
+                    {
+                        String drawLaps = "Lap: " + car.laps + "/3";
+                        DrawString(g, drawLaps, 860, 664);
+                    }
 
                     //ShowFuel
-                    String drawFuel = "Fuel: " + Math.Round(car.fuel);
-                    DrawString(g, drawFuel, 220, 10 * CarIndex);
+                    if (CarIndex == 2)
+                    {
+                        String drawFuel = "Fuel: " + Math.Round(car.fuel);
+                        DrawString(g, drawFuel, 690, 686);
+                    }
+                    if (CarIndex == 1)
+                    {
+                        String drawFuel = "Fuel: " + Math.Round(car.fuel);
+                        DrawString(g, drawFuel, 860, 686);
+                    }
 
                     //ShowPit
-                    String drawPit = "Pits: " + car.pitCount;
-                    DrawString(g, drawPit, 320, 10 * CarIndex);
+                    if (CarIndex == 2)
+                    {
+                        String drawPit = "Pits: " + car.pitCount;
+                        DrawString(g, drawPit, 690, 708);
+                    }
+                    if (CarIndex == 1)
+                    {
+                        String drawPit = "Pits: " + car.pitCount;
+                        DrawString(g, drawPit, 860, 708);
+                    }
                 }
                 if (Map == 3)
                 {
+                    //Showplayer
+                    if (CarIndex == 2)
+                    {
+                        String DrawPlayer = "Player 1: ";
+                        DrawString(g, DrawPlayer, 12, 640);
+                    }
+                    if (CarIndex == 1)
+                    {
+                        String DrawPlayer = "Player 2: ";
+                        DrawString(g, DrawPlayer, 182, 640);
+                    }
+
                     //ShowSpeed
-                    String drawSpeed = "Speed: " + Math.Round(car.speed * 56) + "Km/u";
-                    DrawString(g, drawSpeed, 0, 10 * CarIndex);
+                    if (CarIndex == 2)
+                    {
+                        String drawSpeed = "Speed: " + Math.Round(car.speed * 45) + "km/u";
+                        DrawString(g, drawSpeed, 12, 662);
+                    }
+                    if (CarIndex == 1)
+                    {
+                        String drawSpeed = "Speed: " + Math.Round(car.speed * 45) + "km/u";
+                        DrawString(g, drawSpeed, 182, 662);
+                    }
 
                     //ShowLaps
-                    String drawLaps = "Lap: " + car.laps + "/3";
-                    DrawString(g, drawLaps, 120, 10 * CarIndex);
+                    if (CarIndex == 2)
+                    {
+                        String drawLaps = "Lap: " + car.laps + "/3";
+                        DrawString(g, drawLaps, 12, 684);
+                    }
+                    if (CarIndex == 1)
+                    {
+                        String drawLaps = "Lap: " + car.laps + "/3";
+                        DrawString(g, drawLaps, 182, 684);
+                    }
 
                     //ShowFuel
-                    String drawFuel = "Fuel: " + Math.Round(car.fuel);
-                    DrawString(g, drawFuel, 220, 10 * CarIndex);
+                    if (CarIndex == 2)
+                    {
+                        String drawFuel = "Fuel: " + Math.Round(car.fuel);
+                        DrawString(g, drawFuel, 12, 706);
+                    }
+                    if (CarIndex == 1)
+                    {
+                        String drawFuel = "Fuel: " + Math.Round(car.fuel);
+                        DrawString(g, drawFuel, 182, 706);
+                    }
 
                     //ShowPit
-                    String drawPit = "Pits: " + car.pitCount;
-                    DrawString(g, drawPit, 320, 10 * CarIndex);
+                    if (CarIndex == 2)
+                    {
+                        String drawPit = "Pits: " + car.pitCount;
+                        DrawString(g, drawPit, 12, 728);
+                    }
+                    if (CarIndex == 1)
+                    {
+                        String drawPit = "Pits: " + car.pitCount;
+                        DrawString(g, drawPit, 182, 728);
+                    }
                 }
 
                 //Zet middelpunt van auto
@@ -331,24 +464,34 @@ namespace RaceGameExample
                 //Draw de auto
                 g.DrawImage(car.getImage(), car.getPosition().X, car.getPosition().Y);
                 g.ResetTransform();
-                CarIndex += 2;
-
+                CarIndex ++;
 
                 //Coords van auto
                 //String drawPos = "X: " + car.getPosition().X + " Y:" + car.getPosition().Y;
                 //DrawString(g, drawPos, car.getPosition().X + 20, car.getPosition().Y + 20);
-
-
             }
         }
         //Properties van de drawstring
         void DrawString(Graphics g, string str, int x, int y)
         {
-            Font drawFont = new Font("Century Gothic Bold Italic", 16);
-            SolidBrush drawBrush = new SolidBrush(Color.Red);
+            if (Map == 1) {
+                Font drawFont = new Font("Century Gothic Bold Italic", 14);
+                SolidBrush drawBrush = new SolidBrush(Color.White);
+                g.DrawString(str, drawFont, drawBrush, x, y);
+            }
+            if (Map == 2)
+            {
+                Font drawFont = new Font("Century Gothic Bold Italic", 16);
+                SolidBrush drawBrush = new SolidBrush(Color.Black);
+                g.DrawString(str, drawFont, drawBrush, x, y);
+            }
+            if (Map == 3)
+            {
+                Font drawFont = new Font("Century Gothic Bold Italic", 16);
+                SolidBrush drawBrush = new SolidBrush(Color.Black);
+                g.DrawString(str, drawFont, drawBrush, x, y);
+            }
 
-            // Draw string to screen
-            g.DrawString(str, drawFont, drawBrush, x, y);
         }
 
         private void timerGameTicks_Tick(object sender, EventArgs e)
