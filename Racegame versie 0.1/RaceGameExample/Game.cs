@@ -265,13 +265,13 @@ namespace RaceGameExample {
                 g.TranslateTransform(-moveX, -moveY);
 
                 //auto collision
-                Rectangle box = new Rectangle(car.getPosition().X, car.getPosition().Y, 58, 26);
+                Rectangle box = new Rectangle(car.getPosition().X, car.getPosition().Y, car.getImage().Width, car.getImage().Height);
 
                 g.DrawRectangle(Pens.Red, box);
-
+                //always true
                 if (box.IntersectsWith(box))
                 {
-                    car.speed = 0;
+                    //iets doen met die auto
                 }
 
                 //Draw de auto
