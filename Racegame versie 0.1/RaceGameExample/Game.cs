@@ -243,21 +243,60 @@ namespace RaceGameExample {
                 //String drawFinish = "Finish: " + car.finish;
                 //DrawString(g, drawFinish, 300, 40 * CarIndex);
 
-                //ShowSpeed
-                String drawSpeed = "Speed: " + Math.Round(car.speed * 56) + "Km/u";
-                DrawString(g, drawSpeed, 0, 10 * CarIndex);
+                if (Map == 1)
+                {
+                    //ShowSpeed
+                    String drawSpeed = "Speed: " + Math.Round(car.speed * 56) + "Km/u";
+                    DrawString(g, drawSpeed, 0, 10 * CarIndex);
 
-                //ShowLaps
-                String drawLaps= "Lap: " + car.laps + "/3";
-                DrawString(g, drawLaps, 120, 10 * CarIndex);
+                    //ShowLaps
+                    String drawLaps = "Lap: " + car.laps + "/3";
+                    DrawString(g, drawLaps, 120, 10 * CarIndex);
 
-                //ShowFuel
-                String drawFuel = "Fuel: " + Math.Round(car.fuel);
-                DrawString(g, drawFuel, 220, 10 * CarIndex);
+                    //ShowFuel
+                    String drawFuel = "Fuel: " + Math.Round(car.fuel);
+                    DrawString(g, drawFuel, 220, 10 * CarIndex);
 
-                //ShowPit
-                String drawPit = "Pits: " + car.pitCount;
-                DrawString(g, drawPit, 320, 10 * CarIndex);
+                    //ShowPit
+                    String drawPit = "Pits: " + car.pitCount;
+                    DrawString(g, drawPit, 320, 10 * CarIndex);
+                }
+                if (Map == 2)
+                {
+                    //ShowSpeed
+                    String drawSpeed = "Speed: " + Math.Round(car.speed * 56) + "Km/u";
+                    DrawString(g, drawSpeed, 0, 10 * CarIndex);
+
+                    //ShowLaps
+                    String drawLaps = "Lap: " + car.laps + "/3";
+                    DrawString(g, drawLaps, 120, 10 * CarIndex);
+
+                    //ShowFuel
+                    String drawFuel = "Fuel: " + Math.Round(car.fuel);
+                    DrawString(g, drawFuel, 220, 10 * CarIndex);
+
+                    //ShowPit
+                    String drawPit = "Pits: " + car.pitCount;
+                    DrawString(g, drawPit, 320, 10 * CarIndex);
+                }
+                if (Map == 3)
+                {
+                    //ShowSpeed
+                    String drawSpeed = "Speed: " + Math.Round(car.speed * 56) + "Km/u";
+                    DrawString(g, drawSpeed, 0, 10 * CarIndex);
+
+                    //ShowLaps
+                    String drawLaps = "Lap: " + car.laps + "/3";
+                    DrawString(g, drawLaps, 120, 10 * CarIndex);
+
+                    //ShowFuel
+                    String drawFuel = "Fuel: " + Math.Round(car.fuel);
+                    DrawString(g, drawFuel, 220, 10 * CarIndex);
+
+                    //ShowPit
+                    String drawPit = "Pits: " + car.pitCount;
+                    DrawString(g, drawPit, 320, 10 * CarIndex);
+                }
 
                 //Zet middelpunt van auto
                 float moveX = car.getImage().Width / 2f + car.getPosition().X;
@@ -267,8 +306,8 @@ namespace RaceGameExample {
                 g.TranslateTransform(-moveX, -moveY);
 
                 //Coords van auto
-                //String drawPos = "X: " + car.getPosition().X + " Y:" +car.getPosition().Y;
-                //DrawString(g, drawPos, car.getPosition().X + 20, car.getPosition().Y + 20);
+                String drawPos = "X: " + car.getPosition().X + " Y:" +car.getPosition().Y;
+                DrawString(g, drawPos, car.getPosition().X + 20, car.getPosition().Y + 20);
 
                 //Draw de auto
                 g.DrawImage(car.getImage(), car.getPosition().X, car.getPosition().Y);
@@ -292,6 +331,11 @@ namespace RaceGameExample {
                 car.calculateNewPosition();
 
             Invalidate();
+
+        }
+
+        private void formRaceGame_Load(object sender, EventArgs e)
+        {
 
         }
     }
