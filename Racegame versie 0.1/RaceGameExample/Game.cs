@@ -12,7 +12,8 @@ using System.Drawing.Drawing2D;
 using System.IO;
 
 
-namespace RaceGameExample {
+namespace RaceGameExample
+{
     public partial class formRaceGame : Form
     {
 
@@ -221,13 +222,18 @@ namespace RaceGameExample {
             Backbuffer = new Bitmap(ClientSize.Width, ClientSize.Height);
         }
 
-        void Draw(Graphics g) {
+        void Draw(Graphics g)
+        {
             int CarIndex = 1;
-            Rectangle car1 = new Rectangle(cars[0].getPosition().X, cars[0].getPosition().Y, cars[0].getImage().Width, cars[0].getImage().Height);
-            Rectangle car2 = new Rectangle(cars[1].getPosition().X, cars[1].getPosition().Y, cars[1].getImage().Width, cars[1].getImage().Height);
+            Rectangle[] carBoxes = new Rectangle[] {
+            new Rectangle(cars[0].getPosition().X, cars[0].getPosition().Y, cars[0].getImage().Width, cars[0].getImage().Height),
+            new Rectangle(cars[1].getPosition().X, cars[1].getPosition().Y, cars[1].getImage().Width, cars[1].getImage().Height)
+        };
 
-
-            foreach (Car car in cars) {
+            
+            for(int i = 0; i< cars.Count; i++)
+            {
+                Car car = cars[i];
                 //Start checkpoint code en fuel code
                 car.checkpointCount();
                 car.AmountFuel();
@@ -250,7 +256,7 @@ namespace RaceGameExample {
                 DrawString(g, drawSpeed, 0, 10 * CarIndex);
 
                 //ShowLaps
-                String drawLaps= "Lap: " + car.laps + "/3";
+                String drawLaps = "Lap: " + car.laps + "/3";
                 DrawString(g, drawLaps, 120, 10 * CarIndex);
 
                 //ShowFuel
@@ -268,17 +274,11 @@ namespace RaceGameExample {
                 g.RotateTransform(car.getRotation());
                 g.TranslateTransform(-moveX, -moveY);
 
-                g.DrawRectangle(Pens.Red, car1);
-                g.DrawRectangle(Pens.Red, car2);
+                g.DrawRectangle(Pens.Red, carBoxes[i]);
 
-                if (car1.IntersectsWith(car2))
+                if (carBoxes[0].IntersectsWith(carBoxes[1]))
                 {
-                    cars[0].speed = -1;
-                }
-
-                if (car2.IntersectsWith(car1))
-                {
-                    cars[1].speed = -1;
+                    car.speed = 2;
                 }
 
                 //Draw de auto
@@ -288,10 +288,10 @@ namespace RaceGameExample {
 
 
                 //Coords van auto
-                String drawPos = "X: " + car.getPosition().X + " Y:" +car.getPosition().Y;
+                String drawPos = "X: " + car.getPosition().X + " Y:" + car.getPosition().Y;
                 DrawString(g, drawPos, car.getPosition().X + 20, car.getPosition().Y + 20);
 
-                
+
             }
         }
         //Properties van de drawstring
