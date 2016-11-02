@@ -12,7 +12,8 @@ using System.Drawing.Drawing2D;
 using System.IO;
 
 
-namespace RaceGameExample {
+namespace RaceGameExample
+{
     public partial class formRaceGame : Form
     {
 
@@ -223,9 +224,18 @@ namespace RaceGameExample {
             Backbuffer = new Bitmap(ClientSize.Width, ClientSize.Height);
         }
 
-        void Draw(Graphics g) {
+        void Draw(Graphics g)
+        {
             int CarIndex = 1;
-            foreach (Car car in cars) {
+            Rectangle[] carBoxes = new Rectangle[] {
+            new Rectangle(cars[0].getPosition().X, cars[0].getPosition().Y, cars[0].getImage().Width, cars[0].getImage().Height),
+            new Rectangle(cars[1].getPosition().X, cars[1].getPosition().Y, cars[1].getImage().Width, cars[1].getImage().Height)
+        };
+
+            
+            for(int i = 0; i< cars.Count; i++)
+            {
+                Car car = cars[i];
                 //Start checkpoint code en fuel code
                 car.checkpointCount();
                 car.AmountFuel();
@@ -305,14 +315,24 @@ namespace RaceGameExample {
                 g.RotateTransform(car.getRotation());
                 g.TranslateTransform(-moveX, -moveY);
 
-                //Coords van auto
-                String drawPos = "X: " + car.getPosition().X + " Y:" +car.getPosition().Y;
-                DrawString(g, drawPos, car.getPosition().X + 20, car.getPosition().Y + 20);
+                g.DrawRectangle(Pens.Red, carBoxes[i]);
+
+                if (carBoxes[0].IntersectsWith(carBoxes[1]))
+                {
+                    car.speed = 2;
+                }
 
                 //Draw de auto
                 g.DrawImage(car.getImage(), car.getPosition().X, car.getPosition().Y);
                 g.ResetTransform();
                 CarIndex += 2;
+
+
+                //Coords van auto
+                String drawPos = "X: " + car.getPosition().X + " Y:" + car.getPosition().Y;
+                DrawString(g, drawPos, car.getPosition().X + 20, car.getPosition().Y + 20);
+
+
             }
         }
         //Properties van de drawstring
