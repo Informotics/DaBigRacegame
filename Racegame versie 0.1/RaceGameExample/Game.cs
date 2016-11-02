@@ -321,7 +321,7 @@ namespace RaceGameExample
                 g.RotateTransform(car.getRotation());
                 g.TranslateTransform(-moveX, -moveY);
 
-                g.DrawRectangle(Pens.Red, carBoxes[i]);
+                //g.DrawRectangle(Pens.Red, carBoxes[i]);
 
                 if (carBoxes[0].IntersectsWith(carBoxes[1]))
                 {
