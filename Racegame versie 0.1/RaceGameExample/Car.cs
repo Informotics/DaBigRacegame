@@ -156,7 +156,7 @@ namespace RaceGameExample {
                     }
                 }
 
-                if (getPosition().X > 300 && getPosition().X < 302 && getPosition().Y > 515 && getPosition().Y < 595)
+                if (getPosition().X > 320 && getPosition().X < 324 && getPosition().Y > 515 && getPosition().Y < 595)
                 {
                     Sounds.Refill.Play();
                 }
