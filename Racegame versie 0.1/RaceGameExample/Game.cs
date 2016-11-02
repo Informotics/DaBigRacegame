@@ -265,14 +265,22 @@ namespace RaceGameExample {
                 g.TranslateTransform(-moveX, -moveY);
 
                 //auto collision
-                Rectangle rectangle1 = new Rectangle(cars[0].getPosition().X, cars[0].getPosition().Y, 50, 20);
-                Rectangle rectangle2 = new Rectangle(cars[1].getPosition().X, cars[1].getPosition().Y, 50, 20);
-                g.DrawRectangle(Pens.Red, rectangle1);
-                g.DrawRectangle(Pens.Red, rectangle2);
+                //Rectangle rectangle1 = new Rectangle(cars[0].getPosition().X, cars[0].getPosition().Y, 50, 26);
+                //Rectangle rectangle2 = new Rectangle(cars[1].getPosition().X, cars[1].getPosition().Y, 50, 26);
+                Rectangle rectangle3 = new Rectangle(cars[0].getPosition().X, cars[0].getPosition().Y, 10, 26);
+                Rectangle rectangle4 = new Rectangle(cars[1].getPosition().X, cars[1].getPosition().Y, 10, 26);
+                //g.DrawRectangle(Pens.Red, rectangle1);
+                //g.DrawRectangle(Pens.Red, rectangle2);
+                g.DrawRectangle(Pens.Red, rectangle3);
+                g.DrawRectangle(Pens.Red, rectangle4);
 
-                if (rectangle1.IntersectsWith(rectangle2))
+                //if (rectangle1.IntersectsWith(rectangle2))
+                //{
+                //    car.speed = 1.5;
+                //}
+                if (rectangle3.IntersectsWith(rectangle4))
                 {
-                    MessageBox.Show("madness");
+                    car.speed = 0;
                 }
                 
 
