@@ -134,9 +134,6 @@
     <None Include="Resources\Player1.png" />
     <None Include="Resources\Player2.png" />
     <None Include="Resources\RacebaanDesert.png" />
-    <Content Include="Resources\Countdown.WAV">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Resources\Car1Speed1.WAV">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -159,6 +156,7 @@
     <Content Include="Resources\BOOM.WAV">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Countdown.WAV" />
     <Content Include="Resources\Ferari 458 Italia.png" />
     <Content Include="Resources\Finallap.WAV">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
