@@ -26,6 +26,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formRaceGame));
             this.timerGameTicks = new System.Windows.Forms.Timer(this.components);
+            this.eendgif = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.eendgif)).BeginInit();
             this.SuspendLayout();
             // 
             // timerGameTicks
@@ -34,6 +36,17 @@
             this.timerGameTicks.Interval = 1;
             this.timerGameTicks.Tick += new System.EventHandler(this.timerGameTicks_Tick);
             // 
+            // eendgif
+            // 
+            this.eendgif.BackgroundImage = global::RaceGameExample.Properties.Resources.Eend;
+            this.eendgif.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.eendgif.Image = global::RaceGameExample.Properties.Resources.Eend;
+            this.eendgif.Location = new System.Drawing.Point(456, 183);
+            this.eendgif.Name = "eendgif";
+            this.eendgif.Size = new System.Drawing.Size(200, 81);
+            this.eendgif.TabIndex = 0;
+            this.eendgif.TabStop = false;
+            // 
             // formRaceGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -41,6 +54,7 @@
             this.BackgroundImage = global::RaceGameExample.Properties.Resources.Racebaan;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.eendgif);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.ForestGreen;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
@@ -51,6 +65,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Classic Kart";
+            ((System.ComponentModel.ISupportInitialize)(this.eendgif)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -58,6 +73,7 @@
         #endregion
 
         private System.Windows.Forms.Timer timerGameTicks;
+        private System.Windows.Forms.PictureBox eendgif;
     }
 }
 

@@ -84,6 +84,7 @@ namespace RaceGameExample {
             if (Map == 2)
             {
                 this.BackgroundImage = Properties.Resources.RacebaanSnow;
+                eendgif.Visible = false;
                 if (Carplayer2 == 1)
                 {
                     Car car2 = new Car(178, 280, 90, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "BMW-M6-GT3.png")));
@@ -133,6 +134,7 @@ namespace RaceGameExample {
             if (Map == 3)
             {
                 this.BackgroundImage = Properties.Resources.RacebaanDesert;
+                eendgif.Visible = false;
                 if (Carplayer2 == 1)
                 {
                     Car car2 = new Car(460, 60, 180, 0, Keys.Left, Keys.Right, Keys.Up, Keys.Down, new Bitmap(Path.Combine(Environment.CurrentDirectory, "BMW-M6-GT3.png")));

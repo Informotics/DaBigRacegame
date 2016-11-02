@@ -128,6 +128,7 @@
     <Content Include="Resources\Car2Speed2.WAV" />
     <Content Include="Resources\Car2Speed3.WAV" />
     <None Include="Resources\Close.png" />
+    <None Include="Resources\Eend.gif" />
     <Content Include="Resources\KAPOW.WAV" />
     <Content Include="Resources\KLETS.WAV" />
     <None Include="Resources\maps.png" />
