@@ -327,9 +327,29 @@ namespace RaceGameExample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap RacebaanDesertColor {
+            get {
+                object obj = ResourceManager.GetObject("RacebaanDesertColor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap RacebaanSnow {
             get {
                 object obj = ResourceManager.GetObject("RacebaanSnow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RacebaanSnowColor {
+            get {
+                object obj = ResourceManager.GetObject("RacebaanSnowColor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

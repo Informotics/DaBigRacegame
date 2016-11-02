@@ -11,7 +11,6 @@ using RaceGameExample.Properties;
 
 namespace RaceGameExample {
     class Car {
-        Bitmap myBitmap = new Bitmap(Properties.Resources.RacebaanColor);
         private Point position;
         private float rotation;
         public double speed;
@@ -107,6 +106,28 @@ namespace RaceGameExample {
             //Map 1 checkpoints en pit
             if (Map == 1)
             {
+                Bitmap map1 = new Bitmap(Properties.Resources.RacebaanColor);
+                System.Drawing.Color pixelColor = map1.GetPixel(getPosition().X, getPosition().Y);
+
+                if (pixelColor.ToArgb() == System.Drawing.Color.Red.ToArgb())
+                {
+                    speed = speed - .5;
+
+                    if (speed <= 1)
+                    {
+                        speed = 1;
+                    }
+                }
+
+                if (pixelColor.ToArgb() == System.Drawing.Color.Yellow.ToArgb())
+                {
+                    speed = speed - .5;
+
+                    if (speed <= -0.5)
+                    {
+                        speed = -0.5;
+                    }
+                }
                 //Set de positie van de pitstop
                 if (getPosition().X > 130 && getPosition().X < 365 && getPosition().Y > 515 && getPosition().Y < 595)
                 {
@@ -171,6 +192,28 @@ namespace RaceGameExample {
             //Map 2 checkpoints en pit
             if (Map == 2)
             {
+                Bitmap map2 = new Bitmap(Properties.Resources.RacebaanSnowColor);
+                System.Drawing.Color pixelColor = map2.GetPixel(getPosition().X, getPosition().Y);
+
+                if (pixelColor.ToArgb() == System.Drawing.Color.Red.ToArgb())
+                {
+                    speed = speed - .5;
+
+                    if (speed <= 1)
+                    {
+                        speed = 1;
+                    }
+                }
+
+                if (pixelColor.ToArgb() == System.Drawing.Color.Yellow.ToArgb())
+                {
+                    speed = speed - .5;
+
+                    if (speed <= -0.5)
+                    {
+                        speed = -0.5;
+                    }
+                }
                 if ((getPosition().X > 20 && getPosition().X < 85 && getPosition().Y > 90 && getPosition().Y < 320) || (getPosition().X > 100 && getPosition().X < 140 && getPosition().Y > 85 && getPosition().Y < 215))
                 {
                     pit = true;
@@ -222,6 +265,28 @@ namespace RaceGameExample {
             //Map 3 checkpoints en pit
             if (Map == 3)
             {
+                Bitmap map3 = new Bitmap(Properties.Resources.RacebaanDesertColor);
+                System.Drawing.Color pixelColor = map3.GetPixel(getPosition().X, getPosition().Y);
+
+                if (pixelColor.ToArgb() == System.Drawing.Color.Red.ToArgb())
+                {
+                    speed = speed - .5;
+
+                    if (speed <= 1)
+                    {
+                        speed = 1;
+                    }
+                }
+
+                if (pixelColor.ToArgb() == System.Drawing.Color.Yellow.ToArgb())
+                {
+                    speed = speed - .5;
+
+                    if (speed <= -0.5)
+                    {
+                        speed = -0.5;
+                    }
+                }
                 if ((getPosition().X > 250 && getPosition().X < 390 && getPosition().Y > 145 && getPosition().Y < 230 ) || (getPosition().X > 280 && getPosition().X < 375 && getPosition().Y > 225 && getPosition().Y < 275))
                 {
                     pit = true;
@@ -371,26 +436,6 @@ namespace RaceGameExample {
                 rotateLeft();
             else if (rightPressed)
                 rotateRight();
-
-
-
-            // Get the color of a pixel within myBitmap.
-            System.Drawing.Color pixelColor = myBitmap.GetPixel(getPosition().X, getPosition().Y);
-
-                if (pixelColor.ToArgb() == System.Drawing.Color.Red.ToArgb())
-                {
-                    speed = speed - .5;
-
-                    if (speed <= 1)
-                    {
-                        speed = 1;
-                    }
-            }
-
-                if (pixelColor.ToArgb() == System.Drawing.Color.Yellow.ToArgb())
-                {
-                    speed = 0;
-                }
             
         }
 

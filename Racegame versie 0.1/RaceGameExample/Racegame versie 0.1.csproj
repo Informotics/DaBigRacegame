@@ -179,7 +179,9 @@
     <None Include="Resources\RacebaanColor.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Resources\RacebaanDesertColor.png" />
     <Content Include="Resources\RacebaanSnow.png" />
+    <None Include="Resources\RacebaanSnowColor.png" />
     <Content Include="Resources\Refill.WAV">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
