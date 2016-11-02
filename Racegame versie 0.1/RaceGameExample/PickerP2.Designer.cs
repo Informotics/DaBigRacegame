@@ -92,6 +92,7 @@
             // 
             this.button5.BackgroundImage = global::RaceGameExample.Properties.Resources.terugknop;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Location = new System.Drawing.Point(58, 661);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(47, 48);
