@@ -125,6 +125,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\BMW M6 GT3.png" />
+    <None Include="Resources\terugknop.jpg" />
     <EmbeddedResource Include="Resources\Victory.wav" />
     <None Include="Resources\Close.png" />
     <None Include="Resources\Eend.gif" />

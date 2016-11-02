@@ -46,5 +46,13 @@ namespace RaceGameExample
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Sounds.Klik.Play();
+            this.Visible = false;
+            var myForm = new Splash_Screen();
+            myForm.Show();
+        }
     }
 }
