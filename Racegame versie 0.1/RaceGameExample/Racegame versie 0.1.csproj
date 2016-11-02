@@ -122,6 +122,7 @@
     <EmbeddedResource Include="Resources\BANG.WAV" />
     <Content Include="Resources\BMW M6 GT3.png" />
     <Content Include="Resources\BOOM.WAV" />
+    <None Include="Resources\Button.png" />
     <Content Include="Resources\Car1Speed2.WAV" />
     <Content Include="Resources\Car1Speed3.WAV" />
     <Content Include="Resources\Car2Speed1.WAV" />
