@@ -64,5 +64,13 @@ namespace RaceGameExample
             var myForm = new formRaceGame();
             myForm.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Sounds.Klik.Play();
+            this.Visible = false;
+            var myForm = new PickerP1();
+            myForm.Show();
+        }
     }
 }
