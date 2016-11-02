@@ -374,10 +374,10 @@ namespace RaceGameExample {
 
 
 
-                // Get the color of a pixel within myBitmap.
-                Color pixelColor = myBitmap.GetPixel(getPosition().X, getPosition().Y);
+            // Get the color of a pixel within myBitmap.
+            System.Drawing.Color pixelColor = myBitmap.GetPixel(getPosition().X, getPosition().Y);
 
-                if (pixelColor.ToArgb() == Color.Red.ToArgb())
+                if (pixelColor.ToArgb() == System.Drawing.Color.Red.ToArgb())
                 {
                     speed = speed - .5;
 
@@ -387,7 +387,7 @@ namespace RaceGameExample {
                     }
             }
 
-                if (pixelColor.ToArgb() == Color.Yellow.ToArgb())
+                if (pixelColor.ToArgb() == System.Drawing.Color.Yellow.ToArgb())
                 {
                     speed = 0;
                 }
