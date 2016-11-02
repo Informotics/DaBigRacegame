@@ -13,7 +13,7 @@ namespace RaceGameExample {
         private bool leftPressed = false, rightPressed = false, throttlePressed = false, brakePressed = false;
         private Keys leftKey, rightKey, throttleKey, brakeKey;
         private Image image;
-        public float fuel = 90;
+        public float fuel = 500;
         public int laps = 1;
         private int Map;
         const float rotateAmount = 3.0f;
@@ -103,7 +103,7 @@ namespace RaceGameExample {
             if (Map == 1)
             {
                 //Set de positie van de pitstop
-                if (getPosition().X > 124 && getPosition().X < 350 && getPosition().Y > 510 && getPosition().Y < 595)
+                if (getPosition().X > 130 && getPosition().X < 365 && getPosition().Y > 515 && getPosition().Y < 595)
                 {
                     //Refuel en limit speed
                     pit = true;
@@ -123,19 +123,19 @@ namespace RaceGameExample {
                 }
 
                 //Set de positie van de checkpoints
-                if (getPosition().X > 250 && getPosition().X < 370 && getPosition().Y > 150 && getPosition().Y < 200)
+                if (getPosition().X > 200 && getPosition().X < 375 && getPosition().Y > 250 && getPosition().Y < 260)
                 {
                     check1 = true;
                 }
-                if (getPosition().X > 840 && getPosition().X < 1010 && getPosition().Y > 560 && getPosition().Y < 620)
+                if (getPosition().X > 870 && getPosition().X < 1024 && getPosition().Y > 580 && getPosition().Y < 590)
                 {
                     check2 = true;
                 }
-                if (getPosition().Y > 310 && getPosition().Y < 430 && getPosition().X > 540 && getPosition().X < 580)
+                if (getPosition().Y > 290 && getPosition().Y < 450 && getPosition().X > 560 && getPosition().X < 570)
                 {
                     check3 = true;
                 }
-                if (getPosition().Y > 520 && getPosition().Y < 745 && getPosition().X > 210 && getPosition().X < 260 && check2)
+                if (getPosition().Y > 540 && getPosition().Y < 768 && getPosition().X > 230 && getPosition().X < 240 && check2)
                 {
                     finish = true;
                 }
@@ -166,7 +166,7 @@ namespace RaceGameExample {
             //Map 2 checkpoints en pit
             if (Map == 2)
             {
-                if ((getPosition().X > 20 && getPosition().X < 95 && getPosition().Y > 95 && getPosition().Y < 340) || (getPosition().X > 100 && getPosition().X < 140 && getPosition().Y > 85 && getPosition().Y < 230))
+                if ((getPosition().X > 20 && getPosition().X < 85 && getPosition().Y > 90 && getPosition().Y < 320) || (getPosition().X > 100 && getPosition().X < 140 && getPosition().Y > 85 && getPosition().Y < 215))
                 {
                     pit = true;
                     fuel = 90;
@@ -184,19 +184,19 @@ namespace RaceGameExample {
                     pitCount++;
                 }
 
-                if (getPosition().X > 485 && getPosition().X < 495 && getPosition().Y > 150 && getPosition().Y < 270)
+                if (getPosition().X > 485 && getPosition().X < 495 && getPosition().Y > 130 && getPosition().Y < 290)
                 {
                     check1 = true;
                 }
-                if (getPosition().X > 820 && getPosition().X < 960 && getPosition().Y > 370 && getPosition().Y < 400)
+                if (getPosition().X > 820 && getPosition().X < 1000 && getPosition().Y > 385 && getPosition().Y < 395)
                 {
                     check2 = true;
                 }
-                if (getPosition().X > 270 && getPosition().X < 290 && getPosition().Y > 610 && getPosition().Y < 745)
+                if (getPosition().X > 240 && getPosition().X < 250 && getPosition().Y > 600 && getPosition().Y < 760)
                 {
                     check3 = true;
                 }
-                if (getPosition().Y > 230 && getPosition().Y < 250 && getPosition().X > 20 && getPosition().X < 250 && check2)
+                if (getPosition().Y > 230 && getPosition().Y < 240 && getPosition().X > 0 && getPosition().X < 260 && check2)
                 {
                     finish = true;
                 }
@@ -217,7 +217,7 @@ namespace RaceGameExample {
             //Map 3 checkpoints en pit
             if (Map == 3)
             {
-                if ((getPosition().X > 250 && getPosition().X < 370 && getPosition().Y > 150 && getPosition().Y < 250 ) || (getPosition().X > 300 && getPosition().X < 360 && getPosition().Y > 140 && getPosition().Y < 290))
+                if ((getPosition().X > 250 && getPosition().X < 390 && getPosition().Y > 145 && getPosition().Y < 230 ) || (getPosition().X > 280 && getPosition().X < 375 && getPosition().Y > 225 && getPosition().Y < 275))
                 {
                     pit = true;
                     fuel = 90;
@@ -235,19 +235,19 @@ namespace RaceGameExample {
                     pitCount++;
                 }
 
-                if (getPosition().X > 370 && getPosition().X < 490 && getPosition().Y > 340 && getPosition().Y < 350)
+                if (getPosition().X > 355 && getPosition().X < 510 && getPosition().Y > 340 && getPosition().Y < 350)
                 {
                     check1 = true;
                 }
-                if (getPosition().X > 800 && getPosition().X < 930 && getPosition().Y > 550 && getPosition().Y < 560)
+                if (getPosition().X > 790 && getPosition().X < 960 && getPosition().Y > 570 && getPosition().Y < 580)
                 {
                     check2 = true;
                 }
-                if (getPosition().X > 125 && getPosition().X < 270 && getPosition().Y > 415 && getPosition().Y < 425)
+                if (getPosition().X > 105 && getPosition().X < 285 && getPosition().Y > 420 && getPosition().Y < 430)
                 {
                     check3 = true;
                 }
-                if (getPosition().Y > 30 && getPosition().Y < 150 && getPosition().X > 540 && getPosition().X < 555 && check2)
+                if (getPosition().Y > 0 && getPosition().Y < 165 && getPosition().X > 545 && getPosition().X < 555 && check2)
                 {
                     finish = true;
                 }
