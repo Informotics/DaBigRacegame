@@ -111,23 +111,48 @@ namespace RaceGameExample {
 
                 if (pixelColor.ToArgb() == System.Drawing.Color.Red.ToArgb())
                 {
-                    speed = speed - .5;
-
-                    if (speed <= 1)
+                    if (speed > 0)
                     {
-                        speed = 1;
+                        speed = speed - .25;
+
+                        if (speed <= 1.0)
+                        {
+                            speed = 1.0;
+                        }
+                    }
+                    if (speed < 0)
+                    {
+                        speed = speed + .25;
+
+                        if (speed <= - 1.0)
+                        {
+                            speed = - 1.0;
+                        }
                     }
                 }
 
                 if (pixelColor.ToArgb() == System.Drawing.Color.Yellow.ToArgb())
                 {
-                    speed = speed - .5;
-
-                    if (speed <= -0.5)
+                    if (speed > 0)
                     {
-                        speed = -0.5;
+                        speed = speed - .35;
+
+                        if (speed <= .5)
+                        {
+                            speed = .5;
+                        }
+                    }
+                    if (speed < 0)
+                    {
+                        speed = speed + .35;
+
+                        if (speed <= - .5)
+                        {
+                            speed = - .5;
+                        }
                     }
                 }
+
                 //Set de positie van de pitstop
                 if (getPosition().X > 130 && getPosition().X < 365 && getPosition().Y > 515 && getPosition().Y < 595)
                 {
@@ -197,21 +222,45 @@ namespace RaceGameExample {
 
                 if (pixelColor.ToArgb() == System.Drawing.Color.Red.ToArgb())
                 {
-                    speed = speed - .5;
-
-                    if (speed <= 1)
+                    if (speed > 0)
                     {
-                        speed = 1;
+                        speed = speed - .25;
+
+                        if (speed <= 1.0)
+                        {
+                            speed = 1.0;
+                        }
+                    }
+                    if (speed < 0)
+                    {
+                        speed = speed + .25;
+
+                        if (speed <= -1.0)
+                        {
+                            speed = -1.0;
+                        }
                     }
                 }
 
                 if (pixelColor.ToArgb() == System.Drawing.Color.Yellow.ToArgb())
                 {
-                    speed = speed - .5;
-
-                    if (speed <= -0.5)
+                    if (speed > 0)
                     {
-                        speed = -0.5;
+                        speed = speed - .35;
+
+                        if (speed <= .5)
+                        {
+                            speed = .5;
+                        }
+                    }
+                    if (speed < 0)
+                    {
+                        speed = speed + .35;
+
+                        if (speed <= -.5)
+                        {
+                            speed = -.5;
+                        }
                     }
                 }
                 if ((getPosition().X > 20 && getPosition().X < 85 && getPosition().Y > 90 && getPosition().Y < 320) || (getPosition().X > 100 && getPosition().X < 140 && getPosition().Y > 85 && getPosition().Y < 215))
@@ -270,21 +319,45 @@ namespace RaceGameExample {
 
                 if (pixelColor.ToArgb() == System.Drawing.Color.Red.ToArgb())
                 {
-                    speed = speed - .5;
-
-                    if (speed <= 1)
+                    if (speed > 0)
                     {
-                        speed = 1;
+                        speed = speed - .25;
+
+                        if (speed <= 1.0)
+                        {
+                            speed = 1.0;
+                        }
+                    }
+                    if (speed < 0)
+                    {
+                        speed = speed + .25;
+
+                        if (speed <= -1.0)
+                        {
+                            speed = -1.0;
+                        }
                     }
                 }
 
                 if (pixelColor.ToArgb() == System.Drawing.Color.Yellow.ToArgb())
                 {
-                    speed = speed - .5;
-
-                    if (speed <= -0.5)
+                    if (speed > 0)
                     {
-                        speed = -0.5;
+                        speed = speed - .35;
+
+                        if (speed <= .5)
+                        {
+                            speed = .5;
+                        }
+                    }
+                    if (speed < 0)
+                    {
+                        speed = speed + .35;
+
+                        if (speed <= -.5)
+                        {
+                            speed = -.5;
+                        }
                     }
                 }
                 if ((getPosition().X > 250 && getPosition().X < 390 && getPosition().Y > 145 && getPosition().Y < 230 ) || (getPosition().X > 280 && getPosition().X < 375 && getPosition().Y > 225 && getPosition().Y < 275))
@@ -347,16 +420,13 @@ namespace RaceGameExample {
                     if (speed >= 3.0)
                     {
                         speed = speed + .05;
-                        if (speed >= 5.0)
+                        if (speed >= 6.5)
                         {
-                        speed = 5.0;
+                        speed = 6.5;
                         }
                     }
             }
         }
-
-           
-
 
         /// <summary>
         /// Verandere de negatieve snelheid van de auto als achteruit is ingedrukt
@@ -435,8 +505,7 @@ namespace RaceGameExample {
             if (leftPressed)
                 rotateLeft();
             else if (rightPressed)
-                rotateRight();
-            
+                rotateRight(); 
         }
 
         /// <summary>
