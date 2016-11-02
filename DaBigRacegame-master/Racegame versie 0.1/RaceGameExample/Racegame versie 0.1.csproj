@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9E77C68-353C-4AFF-B1CB-EAC734C367F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RaceGameExample</RootNamespace>
+    <AssemblyName>RaceGameExample</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Car.cs" />
+    <Compile Include="ChooseMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseMap.Designer.cs">
+      <DependentUpon>ChooseMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PickerP2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PickerP2.Designer.cs">
+      <DependentUpon>PickerP2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sounds.cs" />
+    <Compile Include="Game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game.Designer.cs">
+      <DependentUpon>Game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PickerP1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PickerP1.Designer.cs">
+      <DependentUpon>PickerP1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Splash Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash Screen.Designer.cs">
+      <DependentUpon>Splash Screen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChooseMap.resx">
+      <DependentUpon>ChooseMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game.resx">
+      <DependentUpon>Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PickerP2.resx">
+      <DependentUpon>PickerP2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PickerP1.resx">
+      <DependentUpon>PickerP1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Splash Screen.resx">
+      <DependentUpon>Splash Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Racebaan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terugknop.jpg" />
+    <EmbeddedResource Include="Resources\BANG.WAV" />
+    <Content Include="Resources\BMW M6 GT3.png" />
+    <EmbeddedResource Include="Resources\Victory.wav" />
+    <None Include="Resources\Close.png" />
+    <None Include="Resources\Eend.gif" />
+    <None Include="Resources\maps.png" />
+    <None Include="Resources\Player1.png" />
+    <None Include="Resources\Player2.png" />
+    <None Include="Resources\RacebaanDesert.png" />
+    <EmbeddedResource Include="Resources\Countdown.WAV" />
+    <EmbeddedResource Include="Resources\Car1Speed1.WAV" />
+    <EmbeddedResource Include="Resources\Car1Speed2.WAV" />
+    <EmbeddedResource Include="Resources\Car1Speed3.WAV" />
+    <EmbeddedResource Include="Resources\Car2Speed1.WAV" />
+    <EmbeddedResource Include="Resources\Car2Speed2.WAV" />
+    <EmbeddedResource Include="Resources\Car2Speed3.WAV" />
+    <EmbeddedResource Include="Resources\Click1.WAV" />
+    <EmbeddedResource Include="Resources\BOOM.WAV" />
+    <Content Include="Resources\Ferari 458 Italia.png" />
+    <EmbeddedResource Include="Resources\Finallap.WAV" />
+    <EmbeddedResource Include="Resources\Finish.WAV" />
+    <EmbeddedResource Include="Resources\KAPOW.WAV" />
+    <EmbeddedResource Include="Resources\KLETS.WAV" />
+    <Content Include="Resources\Mercedes AMG GTR.png" />
+    <EmbeddedResource Include="Resources\Offroad.WAV" />
+    <EmbeddedResource Include="Resources\PATS.WAV" />
+    <Content Include="Resources\Porsche 911 GTR RS.png" />
+    <Content Include="Resources\RacebaanSnow.png" />
+    <EmbeddedResource Include="Resources\Refill.WAV" />
+    <EmbeddedResource Include="Resources\Refill2.WAV" />
+    <Content Include="Resources\Splash.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
