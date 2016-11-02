@@ -146,6 +146,9 @@
     <EmbeddedResource Include="Resources\Offroad.WAV" />
     <EmbeddedResource Include="Resources\PATS.WAV" />
     <Content Include="Resources\Porsche 911 GTR RS.png" />
+    <None Include="Resources\RacebaanColor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <Content Include="Resources\RacebaanSnow.png" />
     <EmbeddedResource Include="Resources\Refill.WAV" />
     <EmbeddedResource Include="Resources\Refill2.WAV" />
