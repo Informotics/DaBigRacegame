@@ -67,8 +67,7 @@ namespace RaceGameExample
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Sounds.Klik.PlaySync();
-            Sounds.Go.Play();
+            Sounds.Klik.Play();
             this.Visible = false;
             var myForm = new PickerP1();
             myForm.Show();
