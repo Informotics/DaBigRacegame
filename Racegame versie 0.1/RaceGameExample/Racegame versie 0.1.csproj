@@ -125,6 +125,7 @@
     <Content Include="Resources\BANG.WAV">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\BANG1.WAV" />
     <Content Include="Resources\BMW M6 GT3.png" />
     <None Include="Resources\terugknop.jpg" />
     <EmbeddedResource Include="Resources\Victory.wav" />
@@ -134,15 +135,19 @@
     <None Include="Resources\Player1.png" />
     <None Include="Resources\Player2.png" />
     <None Include="Resources\RacebaanDesert.png" />
+    <None Include="Resources\BOOM1.WAV" />
     <Content Include="Resources\Car1Speed1.WAV">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Car1Speed11.WAV" />
     <Content Include="Resources\Car1Speed2.WAV">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Car1Speed21.WAV" />
     <Content Include="Resources\Car1Speed3.WAV">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Car1Speed31.WAV" />
     <Content Include="Resources\Car2Speed1.WAV">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

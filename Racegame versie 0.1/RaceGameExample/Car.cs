@@ -180,7 +180,10 @@ namespace RaceGameExample {
                 if (pit)
                 {
                     pit = false;
-                    pitCount = 1;
+                    if (getPosition().X > 141 && getPosition().X < 144 && getPosition().Y > 545 && getPosition().Y < 630)
+                    {
+                        pitCount++;
+                    }
                 }
 
                 //Set de positie van de checkpoints
@@ -270,7 +273,7 @@ namespace RaceGameExample {
                     }
                 }
 
-                if (getPosition().X > 20 && getPosition().X < 85 && getPosition().Y > 230 && getPosition().Y < 240)
+                if (getPosition().X > 20 && getPosition().X < 85 && getPosition().Y > 280 && getPosition().Y < 300)
                 {
                     Sounds.Refill.Play();
                 }
@@ -290,7 +293,10 @@ namespace RaceGameExample {
                 if (pit)
                 {
                     pit = false;
-                    pitCount = 1;
+                    if (getPosition().X > 20 && getPosition().X < 85 && getPosition().Y > 290 && getPosition().Y < 293)
+                    {
+                        pitCount++;
+                    }
                 }
 
                 if (getPosition().X > 485 && getPosition().X < 495 && getPosition().Y > 130 && getPosition().Y < 290)
@@ -374,31 +380,9 @@ namespace RaceGameExample {
                             }
                         }
                     }
-
-                    if (pixelColor.ToArgb() == System.Drawing.Color.Yellow.ToArgb())
-                    {
-                        if (speed > 0)
-                        {
-                            speed = speed - .35;
-
-                            if (speed <= .5)
-                            {
-                                speed = .5;
-                            }
-                        }
-                        if (speed < 0)
-                        {
-                            speed = speed + .35;
-
-                            if (speed <= -.5)
-                            {
-                                speed = -.5;
-                            }
-                        }
-                    }
                 }
 
-                if (getPosition().X > 270 && getPosition().X < 410 && getPosition().Y > 205 && getPosition().Y < 215)
+                if (getPosition().X > 250 && getPosition().X < 390 && getPosition().Y > 220 && getPosition().Y < 225)
                 {
                     Sounds.Refill.Play();
                 }
@@ -418,7 +402,10 @@ namespace RaceGameExample {
                 if (pit)
                 {
                     pit = false;
-                    pitCount = 1;
+                    if (getPosition().X > 250 && getPosition().X < 390 && getPosition().Y > 220 && getPosition().Y < 222)
+                    {
+                        pitCount++;
+                    }
                 }
 
                 if (getPosition().X > 355 && getPosition().X < 510 && getPosition().Y > 340 && getPosition().Y < 350)
