@@ -25,6 +25,9 @@ namespace RaceGameExample
         public static SoundPlayer Klik = new SoundPlayer(Resources.Click1);
         public static SoundPlayer Countdown = new SoundPlayer(Resources.Countdown);
         public static SoundPlayer Refill2 = new SoundPlayer(Resources.Refill2);
+        public static SoundPlayer Player1Win = new SoundPlayer(Resources.Player1wins);
+        public static SoundPlayer Player2Win = new SoundPlayer(Resources.Player2wins);
+        public static SoundPlayer Go = new SoundPlayer(Resources.Go);
 
         public static void loadSounds()
         {
@@ -47,6 +50,9 @@ namespace RaceGameExample
             Klik.Load();
             Countdown.Load();
             Refill2.Load();
+            Player1Win.Load();
+            Player2Win.Load();
+            Go.Load();
         }
     }
 }

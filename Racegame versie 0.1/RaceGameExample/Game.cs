@@ -225,8 +225,6 @@ namespace RaceGameExample
             Backbuffer = new Bitmap(ClientSize.Width, ClientSize.Height);
         }
 
-
-
         void Draw(Graphics g)
         {
             int CarIndex = 1;
@@ -257,7 +255,31 @@ namespace RaceGameExample
                 //String drawFinish = "Finish: " + car.finish;
                 //DrawString(g, drawFinish, 300, 40 * CarIndex);
 
+                if (cars[0].laps > 3 && car.pitCount > 0)
+                {
+                    Sounds.Finish.PlaySync();
+                    System.Threading.Thread.Sleep(200);
+                    Sounds.Player2Win.PlaySync();
+                    System.Threading.Thread.Sleep(400);
+                    Sounds.Victory.Play();
+                    System.Threading.Thread.Sleep(2000);
+                    this.Visible = false;
+                    var myForm = new Splash_Screen();
+                    myForm.Show();
+                }
 
+                if (cars[1].laps > 3 && car.pitCount > 0)
+                {
+                    Sounds.Finish.PlaySync();
+                    System.Threading.Thread.Sleep(200);
+                    Sounds.Player1Win.PlaySync();
+                    System.Threading.Thread.Sleep(400);
+                    Sounds.Victory.Play();
+                    System.Threading.Thread.Sleep(2000);
+                    this.Visible = false;
+                    var myForm = new Splash_Screen();
+                    myForm.Show();
+                }
 
                 if (Map == 1)
                 {
