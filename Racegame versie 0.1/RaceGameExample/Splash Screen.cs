@@ -18,7 +18,18 @@ namespace RaceGameExample
         {
             InitializeComponent();
         }
-       
+
+
+        //Close on escape
+        protected override bool ProcessDialogKey(Keys keyData)
+        {
+            if (Form.ModifierKeys == Keys.None && keyData == Keys.Escape)
+            {
+                Application.Exit();
+            }
+            return base.ProcessDialogKey(keyData);
+        }
+
         //Start knop
         private void button1_Click(object sender, EventArgs e)
         {

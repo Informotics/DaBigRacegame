@@ -83,6 +83,16 @@ namespace RaceGameExample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BMW_M6_GT3_Top {
+            get {
+                object obj = ResourceManager.GetObject("BMW_M6_GT3_Top", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Button {
             get {
                 object obj = ResourceManager.GetObject("Button", resourceCulture);
@@ -129,6 +139,16 @@ namespace RaceGameExample.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ferarri458Italia_TOP {
+            get {
+                object obj = ResourceManager.GetObject("Ferarri458Italia_TOP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream Finallap {
@@ -162,6 +182,16 @@ namespace RaceGameExample.Properties {
         internal static System.Drawing.Bitmap Mercedes_AMG_GTR {
             get {
                 object obj = ResourceManager.GetObject("Mercedes_AMG_GTR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MercedesAMG_GTR_TOP {
+            get {
+                object obj = ResourceManager.GetObject("MercedesAMG_GTR_TOP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -210,6 +240,16 @@ namespace RaceGameExample.Properties {
         internal static System.Drawing.Bitmap Porsche_911_GTR_RS {
             get {
                 object obj = ResourceManager.GetObject("Porsche_911_GTR_RS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Porsche911_GTR_RS_TOP {
+            get {
+                object obj = ResourceManager.GetObject("Porsche911_GTR_RS_TOP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
