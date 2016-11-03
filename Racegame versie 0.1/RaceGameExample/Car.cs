@@ -106,52 +106,55 @@ namespace RaceGameExample {
             //Map 1 checkpoints en pit
             if (Map == 1)
             {
-                //Colormap oproepen
-                Bitmap map1 = new Bitmap(Properties.Resources.RacebaanColor);
-                System.Drawing.Color pixelColor = map1.GetPixel(getPosition().X, getPosition().Y);
-
-                //Rood is kleur van buiten de baan, hij limit de speed als je op deze kleur zit
-                if (pixelColor.ToArgb() == System.Drawing.Color.Red.ToArgb())
+                if (getPosition().X > 1 && getPosition().X < 1024 && getPosition().Y > 1 && getPosition().Y < 768)
                 {
-                    if (speed > 0)
-                    {
-                        speed = speed - .8;
+                    //Colormap oproepen
+                    Bitmap map1 = new Bitmap(Properties.Resources.RacebaanColor);
+                    System.Drawing.Color pixelColor = map1.GetPixel(getPosition().X, getPosition().Y);
 
-                        if (speed <= 1.0)
+                    //Rood is kleur van buiten de baan, hij limit de speed als je op deze kleur zit
+                    if (pixelColor.ToArgb() == System.Drawing.Color.Red.ToArgb())
+                    {
+                        if (speed > 0)
                         {
-                            speed = 1.0;
+                            speed = speed - .8;
+
+                            if (speed <= 1.0)
+                            {
+                                speed = 1.0;
+                            }
+                        }
+                        if (speed < 0)
+                        {
+                            speed = speed + .8;
+
+                            if (speed <= -1.0)
+                            {
+                                speed = -1.0;
+                            }
                         }
                     }
-                    if (speed < 0)
-                    {
-                        speed = speed + .8;
 
-                        if (speed <= -1.0)
+                    //Geel is de kleur van objecten
+                    if (pixelColor.ToArgb() == System.Drawing.Color.Yellow.ToArgb())
+                    {
+                        if (speed > 0)
                         {
-                            speed = -1.0;
+                            speed = speed - 1;
+
+                            if (speed <= .5)
+                            {
+                                speed = .5;
+                            }
                         }
-                    }
-                }
-
-                //Geel is de kleur van objecten
-                if (pixelColor.ToArgb() == System.Drawing.Color.Yellow.ToArgb())
-                {
-                    if (speed > 0)
-                    {
-                        speed = speed - 1;
-
-                        if (speed <= .5)
+                        if (speed < 0)
                         {
-                            speed = .5;
-                        }
-                    }
-                    if (speed < 0)
-                    {
-                        speed = speed + 1;
+                            speed = speed + 1;
 
-                        if (speed <= -.5)
-                        {
-                            speed = -.5;
+                            if (speed <= -.5)
+                            {
+                                speed = -.5;
+                            }
                         }
                     }
                 }
@@ -217,54 +220,57 @@ namespace RaceGameExample {
             //Map 2 checkpoints en pit
             if (Map == 2)
             {
-                Bitmap map2 = new Bitmap(Properties.Resources.RacebaanSnowColor);
-                System.Drawing.Color pixelColor = map2.GetPixel(getPosition().X, getPosition().Y);
+                if (getPosition().X > 1 && getPosition().X < 1024 && getPosition().Y > 1 && getPosition().Y < 768)
+                { 
+                    Bitmap map2 = new Bitmap(Properties.Resources.RacebaanSnowColor);
+                    System.Drawing.Color pixelColor = map2.GetPixel(getPosition().X, getPosition().Y);
 
-                if (pixelColor.ToArgb() == System.Drawing.Color.Red.ToArgb())
-                {
-                    if (speed > 0)
+                    if (pixelColor.ToArgb() == System.Drawing.Color.Red.ToArgb())
                     {
-                        speed = speed - .8;
-
-                        if (speed <= 1.0)
+                        if (speed > 0)
                         {
-                            speed = 1.0;
+                            speed = speed - .8;
+
+                            if (speed <= 1.0)
+                            {
+                                speed = 1.0;
+                            }
+                        }
+                        if (speed < 0)
+                        {
+                            speed = speed + .8;
+
+                            if (speed <= -1.0)
+                            {
+                                speed = -1.0;
+                            }
                         }
                     }
-                    if (speed < 0)
-                    {
-                        speed = speed + .8;
 
-                        if (speed <= -1.0)
+                    if (pixelColor.ToArgb() == System.Drawing.Color.Yellow.ToArgb())
+                    {
+                        if (speed > 0)
                         {
-                            speed = -1.0;
+                            speed = speed - 1;
+
+                            if (speed <= .5)
+                            {
+                                speed = .5;
+                            }
+                        }
+                        if (speed < 0)
+                        {
+                            speed = speed + 1;
+
+                            if (speed <= -.5)
+                            {
+                                speed = -.5;
+                            }
                         }
                     }
                 }
 
-                if (pixelColor.ToArgb() == System.Drawing.Color.Yellow.ToArgb())
-                {
-                    if (speed > 0)
-                    {
-                        speed = speed - 1;
-
-                        if (speed <= .5)
-                        {
-                            speed = .5;
-                        }
-                    }
-                    if (speed < 0)
-                    {
-                        speed = speed + 1;
-
-                        if (speed <= -.5)
-                        {
-                            speed = -.5;
-                        }
-                    }
-                }
-
-                if (getPosition().X > 20 && getPosition().X < 85 && getPosition().Y > 230 && getPosition().Y < 232)
+                if (getPosition().X > 20 && getPosition().X < 85 && getPosition().Y > 230 && getPosition().Y < 240)
                 {
                     Sounds.Refill.Play();
                 }
@@ -320,76 +326,79 @@ namespace RaceGameExample {
             //Map 3 checkpoints en pit
             if (Map == 3)
             {
-                Bitmap map3 = new Bitmap(Properties.Resources.RacebaanDesertColor);
-                System.Drawing.Color pixelColor = map3.GetPixel(getPosition().X, getPosition().Y);
-
-                if (pixelColor.ToArgb() == System.Drawing.Color.Red.ToArgb())
+                if (getPosition().X > 1 && getPosition().X < 1024 && getPosition().Y > 1 && getPosition().Y < 768)
                 {
-                    if (speed > 0)
-                    {
-                        speed = speed - .8;
+                    Bitmap map3 = new Bitmap(Properties.Resources.RacebaanDesertColor);
+                    System.Drawing.Color pixelColor = map3.GetPixel(getPosition().X, getPosition().Y);
 
-                        if (speed <= 1.0)
+                    if (pixelColor.ToArgb() == System.Drawing.Color.Red.ToArgb())
+                    {
+                        if (speed > 0)
                         {
-                            speed = 1.0;
+                            speed = speed - .8;
+
+                            if (speed <= 1.0)
+                            {
+                                speed = 1.0;
+                            }
+                        }
+                        if (speed < 0)
+                        {
+                            speed = speed + .8;
+
+                            if (speed <= -1.0)
+                            {
+                                speed = -1.0;
+                            }
                         }
                     }
-                    if (speed < 0)
-                    {
-                        speed = speed + .8;
 
-                        if (speed <= -1.0)
+                    if (pixelColor.ToArgb() == System.Drawing.Color.Yellow.ToArgb())
+                    {
+                        if (speed > 0)
                         {
-                            speed = -1.0;
+                            speed = speed - 1;
+
+                            if (speed <= .5)
+                            {
+                                speed = .5;
+                            }
+                        }
+                        if (speed < 0)
+                        {
+                            speed = speed + 1;
+
+                            if (speed <= -.5)
+                            {
+                                speed = -.5;
+                            }
+                        }
+                    }
+
+                    if (pixelColor.ToArgb() == System.Drawing.Color.Yellow.ToArgb())
+                    {
+                        if (speed > 0)
+                        {
+                            speed = speed - .35;
+
+                            if (speed <= .5)
+                            {
+                                speed = .5;
+                            }
+                        }
+                        if (speed < 0)
+                        {
+                            speed = speed + .35;
+
+                            if (speed <= -.5)
+                            {
+                                speed = -.5;
+                            }
                         }
                     }
                 }
 
-                if (pixelColor.ToArgb() == System.Drawing.Color.Yellow.ToArgb())
-                {
-                    if (speed > 0)
-                    {
-                        speed = speed - 1;
-
-                        if (speed <= .5)
-                        {
-                            speed = .5;
-                        }
-                    }
-                    if (speed < 0)
-                    {
-                        speed = speed + 1;
-
-                        if (speed <= -.5)
-                        {
-                            speed = -.5;
-                        }
-                    }
-                }
-
-                if (pixelColor.ToArgb() == System.Drawing.Color.Yellow.ToArgb())
-                {
-                    if (speed > 0)
-                    {
-                        speed = speed - .35;
-
-                        if (speed <= .5)
-                        {
-                            speed = .5;
-                        }
-                    }
-                    if (speed < 0)
-                    {
-                        speed = speed + .35;
-
-                        if (speed <= -.5)
-                        {
-                            speed = -.5;
-                        }
-                    }
-                }
-
-                if (getPosition().X > 270 && getPosition().X < 410 && getPosition().Y > 207 && getPosition().Y < 209)
+                if (getPosition().X > 270 && getPosition().X < 410 && getPosition().Y > 205 && getPosition().Y < 215)
                 {
                     Sounds.Refill.Play();
                 }
