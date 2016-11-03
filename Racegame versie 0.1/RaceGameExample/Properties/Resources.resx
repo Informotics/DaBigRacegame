@@ -199,4 +199,16 @@
   <data name="Porsche_911_GTR_RS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Porsche-911-GTR-RS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BMW_M6_GT3_Top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BMW-M6-GT3-Top.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ferarri458Italia_TOP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ferarri458Italia-TOP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MercedesAMG_GTR_TOP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MercedesAMG-GTR-TOP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Porsche911_GTR_RS_TOP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Porsche911-GTR-RS-TOP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

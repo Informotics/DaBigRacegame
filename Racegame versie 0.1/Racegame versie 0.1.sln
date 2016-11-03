@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Racegame versie 0.1", "RaceGameExample\Racegame versie 0.1.csproj", "{A9E77C68-353C-4AFF-B1CB-EAC734C367F1}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Classic Kart Installer", "Classic Kart Installer\Classic Kart Installer.vdproj", "{6C0B118C-A58D-46EE-BD98-62B04C73E306}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,6 +17,8 @@ Global
 		{A9E77C68-353C-4AFF-B1CB-EAC734C367F1}.Debug|x86.Build.0 = Debug|x86
 		{A9E77C68-353C-4AFF-B1CB-EAC734C367F1}.Release|x86.ActiveCfg = Release|x86
 		{A9E77C68-353C-4AFF-B1CB-EAC734C367F1}.Release|x86.Build.0 = Release|x86
+		{6C0B118C-A58D-46EE-BD98-62B04C73E306}.Debug|x86.ActiveCfg = Debug
+		{6C0B118C-A58D-46EE-BD98-62B04C73E306}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
