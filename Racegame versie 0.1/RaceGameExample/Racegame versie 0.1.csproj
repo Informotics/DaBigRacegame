@@ -122,11 +122,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\arrows.png" />
-    <Content Include="Resources\BANG.WAV">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <None Include="Resources\BANG1.WAV" />
-    <Content Include="Resources\BMW M6 GT3.png" />
     <None Include="Resources\terugknop.jpg" />
     <EmbeddedResource Include="Resources\Victory.wav" />
     <None Include="Resources\Close.png" />
@@ -135,65 +130,25 @@
     <None Include="Resources\Player1.png" />
     <None Include="Resources\Player2.png" />
     <None Include="Resources\RacebaanDesert.png" />
-    <None Include="Resources\BOOM1.WAV" />
-    <Content Include="Resources\Car1Speed1.WAV">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <None Include="Resources\Car1Speed11.WAV" />
-    <Content Include="Resources\Car1Speed2.WAV">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <None Include="Resources\Car1Speed21.WAV" />
-    <Content Include="Resources\Car1Speed3.WAV">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <None Include="Resources\Car1Speed31.WAV" />
-    <Content Include="Resources\Car2Speed1.WAV">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Car2Speed2.WAV">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Car2Speed3.WAV">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <EmbeddedResource Include="Resources\Click1.WAV" />
-    <Content Include="Resources\BOOM.WAV">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <None Include="Resources\Countdown.WAV" />
-    <Content Include="Resources\Ferari 458 Italia.png" />
+    <None Include="Resources\BMW-M6-GT3.png" />
+    <None Include="Resources\Ferari-458-Italia.png" />
     <Content Include="Resources\Finallap.WAV">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <EmbeddedResource Include="Resources\Finish.WAV" />
-    <Content Include="Resources\Go.WAV" />
-    <Content Include="Resources\KAPOW.WAV">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\KLETS.WAV">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Mercedes AMG GTR.png" />
-    <Content Include="Resources\Offroad.WAV">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\PATS.WAV">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <None Include="Resources\Player1wins.WAV" />
     <None Include="Resources\Player2wins.WAV" />
-    <Content Include="Resources\Porsche 911 GTR RS.png" />
     <None Include="Resources\RacebaanColor.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Resources\RacebaanDesertColor.png" />
+    <None Include="Resources\Mercedes-AMG-GTR.png" />
+    <None Include="Resources\Porsche-911-GTR-RS.png" />
     <Content Include="Resources\RacebaanSnow.png" />
     <None Include="Resources\RacebaanSnowColor.png" />
     <Content Include="Resources\Refill.WAV">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Refill2.WAV">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\Splash.png" />
