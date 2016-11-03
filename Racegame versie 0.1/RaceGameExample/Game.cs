@@ -246,7 +246,6 @@ namespace RaceGameExample
                 //Start checkpoint code en fuel code
                 car.checkpointCount();
                 car.AmountFuel();
-                //GetPixel_Example();
 
                 //Checkpoint displays
                 //String drawCheck1 = "1: " + car.check1;
