@@ -24,6 +24,7 @@ namespace RaceGameExample
         int Carplayer1;
         int Carplayer2;
         int Map;
+        int go_sound = 0;
 
         public formRaceGame()
         {
@@ -203,6 +204,11 @@ namespace RaceGameExample
 
         void Form1_KeyDown(object sender, KeyEventArgs e)
         {
+            if (go_sound == 1)
+            {
+                go_sound++;
+                System.Threading.Thread.Sleep(2410);
+            }
             foreach (Car car in cars)
                 car.handleKeyDownEvent(e);
         }
@@ -255,12 +261,14 @@ namespace RaceGameExample
                 //String drawFinish = "Finish: " + car.finish;
                 //DrawString(g, drawFinish, 300, 40 * CarIndex);
 
-                if (cars[0].laps > 3 && car.pitCount > 0)
+                if (cars[0].laps > 3 && cars[0].pitCount > 0)
                 {
+                    cars[0].laps = 1;
+                    cars[0].pitCount = 0;
                     Sounds.Finish.PlaySync();
                     System.Threading.Thread.Sleep(200);
                     Sounds.Player2Win.PlaySync();
-                    System.Threading.Thread.Sleep(400);
+                    System.Threading.Thread.Sleep(200);
                     Sounds.Victory.Play();
                     System.Threading.Thread.Sleep(2000);
                     this.Visible = false;
@@ -268,12 +276,14 @@ namespace RaceGameExample
                     myForm.Show();
                 }
 
-                if (cars[1].laps > 3 && car.pitCount > 0)
+                if (cars[1].laps > 3 && cars[1].pitCount > 0)
                 {
+                    cars[1].laps = 1;
+                    cars[1].pitCount = 0;
                     Sounds.Finish.PlaySync();
                     System.Threading.Thread.Sleep(200);
                     Sounds.Player1Win.PlaySync();
-                    System.Threading.Thread.Sleep(400);
+                    System.Threading.Thread.Sleep(200);
                     Sounds.Victory.Play();
                     System.Threading.Thread.Sleep(2000);
                     this.Visible = false;
@@ -512,6 +522,11 @@ namespace RaceGameExample
                 Font drawFont = new Font("Century Gothic Bold Italic", 16);
                 SolidBrush drawBrush = new SolidBrush(Color.Black);
                 g.DrawString(str, drawFont, drawBrush, x, y);
+            }
+            if (go_sound == 0)
+            {
+                go_sound++;
+                Sounds.Countdown.Play();
             }
 
         }
